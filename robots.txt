@@ -1,0 +1,18 @@
+User-agent: *
+
+# Homepage and Drafts
+Allow: /$
+Allow: /ad*
+Allow: /u/*
+Allow: /type/*
+Allow: /SearchDraft/*
+
+# Robots and Sitemap Files
+Allow: /robots.txt
+Allow: /sitemap/*
+Allow: /sitemap.xml
+
+# BLOCK OTHER URLS
+Disallow: /
+
+Sitemap: http://www.acgdraw.com/sitemap.xml

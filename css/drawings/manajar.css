@@ -1,0 +1,294 @@
+@charset "UTF-8";
+/* Global color default list
+ * - Description: Default color
+ * - Baseline Color: #e4acc9
+ */
+/*
+ * COMMON
+ */
+/*
+ * REGISTER PAGE
+ */
+/*
+ * REGISTER PAGE
+ */
+/*
+ * LOGIN PAGE
+ */
+/*
+ * SETTING PAGE
+ */
+/*
+ * DRAWINGS UPLOAD
+ */
+/*
+ * DRWAINGS MANAGER
+ */
+/*
+ * DRAWINGS VIEW
+ */
+/*
+ * DRAWINGS CERNSORING
+ */
+/*
+ * SEARCH RESULT
+ */
+/* Global size parameter
+ * - Baseline Device: Notebook
+ * - Baseline Resolution: 1366*768
+ */
+/*
+ * COMMON
+ */
+/*
+ * REGISTER PAGE
+ */
+/*
+ * LOGIN PAGE
+ */
+/*
+ * FORGET PASSWORD
+ */
+/*
+ * SETTING PAGE
+ */
+/*
+ * DRAWINGS UPLOAD
+ */
+/*
+ * DRAWINGS MANAGER
+ */
+/*
+ * DRAWINGS VIEW
+ */
+/*
+ * DRAWINGS CENSORING
+ */
+/*
+ * SEARCH RESULT
+ */
+#container {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#container .wrap-manager {
+  width: 1100px;
+  min-height: 640px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: table;
+}
+#container .wrap-manager .sect-option {
+  width: 1100px;
+  background-color: #ffffff;
+  display: table;
+}
+#container .wrap-manager .sect-option .wrap-title {
+  font-size: 42px;
+  color: #e4acc9;
+  background-color: #ffffff;
+  padding: 15px 20px;
+  font-family: "黑体", serif;
+  border-bottom: 1px solid #e5e5e5;
+}
+#container .wrap-manager .sect-option .wrap-option-left {
+  float: left;
+  height: 40px;
+  line-height: 40px;
+}
+#container .wrap-manager .sect-option .wrap-option-left .sect-option-item {
+  float: left;
+}
+#container .wrap-manager .sect-option .wrap-option-left .sect-option-item select {
+  width: 130px;
+  height: 40px;
+  border: none;
+  padding-left: 10px;
+  font-size: 14px;
+  color: #555555;
+}
+#container .wrap-manager .sect-option .wrap-option-right {
+  float: right;
+  border-left: 1px solid #e5e5e5;
+}
+#container .wrap-manager .sect-option .wrap-option-right .input-keyword {
+  width: 150px;
+  height: 40px;
+  margin: 0;
+  padding: 0 10px;
+  border: none;
+  font-size: 14px;
+  float: left;
+}
+#container .wrap-manager .sect-option .wrap-option-right .btn-submit-search {
+  border: none;
+  vertical-align: middle;
+  background: url(/img/search.png) no-repeat;
+  width: 35px;
+  height: 36px;
+  margin-top: 8px;
+  margin-right: 5px;
+  float: left;
+  zoom: 0.85;
+}
+#container .wrap-manager .sect-option .wrap-option-right .input-keyword:focus {
+  outline: none;
+}
+#container .wrap-manager .sect-list {
+  width: 1100px;
+  margin-top: 15px;
+  display: table;
+}
+#container .wrap-manager .sect-list .wrap-draft {
+  width: calc(356.66666667px);
+  height: 430px;
+  background-color: #ffffff;
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  transition: transform 0.3s linear, box-shadow 0.3s;
+}
+#container .wrap-manager .sect-list .wrap-draft .wrap-image {
+  width: calc(354.66666667px);
+  height: calc(380px);
+  background-size: cover !important;
+  background-position: center center !important;
+  border: 1px solid #e4acc9;
+}
+#container .wrap-manager .sect-list .wrap-draft .wrap-title {
+  width: calc(314.66666667px);
+  position: absolute;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: bold;
+  text-shadow: 0 0 6px #000000;
+  text-align: left;
+  margin-top: 20px;
+  cursor: pointer;
+  word-break: break-all;
+  word-wrap: break-word;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 20px;
+}
+#container .wrap-manager .sect-list .wrap-draft .wrap-title span {
+  padding: 3px 5px;
+  font-size: 15px;
+  margin-left: 5px;
+}
+#container .wrap-manager .sect-list .wrap-draft .wrap-title .censoring {
+  background: green;
+}
+#container .wrap-manager .sect-list .wrap-draft .wrap-title .rejected {
+  background: red;
+}
+#container .wrap-manager .sect-list .wrap-draft .wrap-like {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 16px;
+}
+#container .wrap-manager .sect-list .wrap-draft .wrap-like i {
+  margin-left: 10px;
+  margin-right: 5px;
+}
+#container .wrap-manager .sect-list .wrap-draft .wrap-like i:nth-child(1) {
+  margin-left: 0;
+}
+#container .wrap-manager .sect-list .wrap-draft .wrap-mask {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: calc(316.66666667px);
+  height: calc(382px);
+  text-align: center;
+  opacity: 0;
+  transition: opacity .3s;
+  padding: 0 20px;
+}
+#container .wrap-manager .sect-list .wrap-draft .wrap-mask p:nth-child(1) {
+  margin-top: 70px;
+  color: #ffffff;
+  font-size: 12px;
+  text-align: left;
+}
+#container .wrap-manager .sect-list .wrap-draft .wrap-mask p:nth-child(2) {
+  margin-top: 10px;
+  color: #ffffff;
+  font-size: 12px;
+  height: 170px;
+  text-align: left;
+  word-break: break-all;
+}
+#container .wrap-manager .sect-list .wrap-draft .wrap-mask p:nth-child(2) .rej-reason {
+  color: #FFEB3B;
+}
+#container .wrap-manager .sect-list .wrap-draft .wrap-mask button {
+  border-radius: 0;
+  font-size: 18px;
+  padding: 5px 15px;
+}
+#container .wrap-manager .sect-list .wrap-draft .wrap-mask button:nth-child(1) {
+  margin-right: 10px;
+}
+#container .wrap-manager .sect-list .wrap-draft:nth-child(3n+3) {
+  margin-right: 0;
+}
+#container .wrap-manager .sect-list .wrap-draft:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 50px gray;
+}
+#container .wrap-manager .sect-list .wrap-draft:hover .wrap-mask {
+  opacity: 1;
+}
+#container .wrap-manager .sect-list-none {
+  width: 1100px;
+  height: 300px;
+  line-height: 300px;
+  font-size: 48px;
+  text-align: center;
+  color: #aaaaaa;
+  background-color: #ffffff;
+  margin-top: 15px;
+  display: none;
+}
+#container .wrap-manager .wrap-pager .pagination {
+  display: table;
+  width: 100%;
+  padding: 0;
+  text-align: center;
+  background-color: #ffffff;
+}
+#container .wrap-manager .wrap-pager .pagination li {
+  display: inline-block;
+  /* Does not support IE8 or less */
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  margin: 10px;
+  font-size: 1.3em;
+  border-bottom: 3px solid #ffffff;
+  color: #888888;
+  transition: background .3s, color .3s;
+}
+#container .wrap-manager .wrap-pager .pagination li a {
+  display: block;
+  color: #888888;
+  transition: color .3s;
+}
+#container .wrap-manager .wrap-pager .pagination li.active {
+  color: #000000;
+  border-bottom: 3px solid #e29abf;
+}
+#container .wrap-manager .wrap-pager .pagination li.disabled {
+  display: none;
+}
+#container .wrap-manager .wrap-pager .pagination li:hover {
+  background-color: #e29abf;
+  color: #ffffff;
+}
+#container .wrap-manager .wrap-pager .pagination li:hover a {
+  color: #ffffff;
+}

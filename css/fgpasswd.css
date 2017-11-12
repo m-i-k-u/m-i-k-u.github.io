@@ -1,0 +1,156 @@
+@charset "UTF-8";
+/* Global color default list
+ * - Description: Default color
+ * - Baseline Color: #e4acc9
+ */
+/*
+ * COMMON
+ */
+/*
+ * REGISTER PAGE
+ */
+/*
+ * REGISTER PAGE
+ */
+/*
+ * LOGIN PAGE
+ */
+/*
+ * SETTING PAGE
+ */
+/*
+ * DRAWINGS UPLOAD
+ */
+/*
+ * DRWAINGS MANAGER
+ */
+/*
+ * DRAWINGS VIEW
+ */
+/*
+ * DRAWINGS CERNSORING
+ */
+/*
+ * SEARCH RESULT
+ */
+/* Global size parameter
+ * - Baseline Device: Notebook
+ * - Baseline Resolution: 1366*768
+ */
+/*
+ * COMMON
+ */
+/*
+ * REGISTER PAGE
+ */
+/*
+ * LOGIN PAGE
+ */
+/*
+ * FORGET PASSWORD
+ */
+/*
+ * SETTING PAGE
+ */
+/*
+ * DRAWINGS UPLOAD
+ */
+/*
+ * DRAWINGS MANAGER
+ */
+/*
+ * DRAWINGS VIEW
+ */
+/*
+ * DRAWINGS CENSORING
+ */
+/*
+ * SEARCH RESULT
+ */
+#container {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#container .wrap-fgpasswd {
+  width: 520px;
+  background-color: #f3f3f3;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  overflow: auto;
+}
+#container .wrap-fgpasswd .wrap-title {
+  width: 100%;
+  height: 265px;
+  text-align: center;
+}
+#container .wrap-fgpasswd .wrap-title .moecat {
+  background: url(/img/moecat.png) no-repeat;
+  width: 450px;
+  height: 220px;
+  margin-left: calc(35px);
+  margin-top: 20px;
+  position: absolute;
+  z-index: 0;
+}
+#container .wrap-fgpasswd .wrap-title .text-register {
+  margin-top: 150px;
+}
+#container .wrap-fgpasswd .wrap-form {
+  width: 325px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+#container .wrap-fgpasswd .wrap-form input {
+  width: calc(285px);
+  height: 60px;
+  border: none;
+  font-size: 24px;
+  font-family: "Calibri Light", "PingFangSC-Ultralight", "STHeitiSC-Light", "华文细黑", Helvetica, Arial, "宋体";
+  padding: 0 20px;
+  background-color: #ffffff;
+  margin-bottom: 1px;
+  border-radius: 5px;
+}
+#container .wrap-fgpasswd .wrap-form input[placeholder] {
+  color: #ACA9AC !important;
+}
+#container .wrap-fgpasswd .wrap-form input[disabled] {
+  background: rgba(0, 0, 0, 0);
+}
+#container .wrap-fgpasswd .wrap-form input:focus {
+  outline: none;
+}
+#container .wrap-fgpasswd .wrap-form #resend {
+  position: absolute;
+  margin-left: calc(-150px);
+  height: 60px;
+  width: 150px;
+  background-color: #e2e2e2;
+  font-size: 18px;
+}
+#container .wrap-fgpasswd .wrap-form button[type="submit"] {
+  width: 100%;
+  height: 80px;
+  border: none;
+  background-color: #e4acc9;
+  color: #ffffff;
+  font-size: 36px;
+  font-family: "STHeitiSC-Light", Helvetica, "微软雅黑 Light", "黑体", "宋体";
+  margin-top: 15px;
+  border-radius: 5px;
+}
+#container .wrap-fgpasswd .wrap-form .geetest_text_tips {
+  text-align: center;
+  color: #888;
+  height: 42px;
+  line-height: 42px;
+  padding: 0;
+  margin: 0;
+  margin-top: 15px;
+}
+#container .wrap-fgpasswd .wrap-form .geetest_holder.geetest_wind {
+  width: 325px !important;
+  margin-top: 15px;
+}

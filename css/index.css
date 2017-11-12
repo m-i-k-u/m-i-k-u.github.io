@@ -1,0 +1,430 @@
+@charset "UTF-8";
+.fl-l {
+  float: left;
+}
+.hide {
+  display: none;
+}
+.cont-main {
+  width: 100%;
+  overflow: hidden;
+  background: #f8f8f8;
+  padding: 20px 0;
+}
+.cont-sub {
+  width: 1250px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.frm {
+  width: 295px;
+  overflow: hidden;
+}
+.frm-w-s {
+  width: 295px;
+}
+.frm-w-l {
+  width: 945px;
+}
+.frm-mgn-r {
+  margin-right: 7px;
+}
+.frm-mgn-xr {
+  margin-right: 13px;
+}
+.mdl {
+  background: #ffffff;
+  border: 1px solid #dddddd;
+  box-shadow: 3px 3px 0 #e8e8e8;
+  margin-bottom: 10px;
+}
+.mdl .ttl {
+  font-size: 1.7em;
+  color: #4c4c4c;
+  border-bottom: 1px solid #f0f0f0;
+  padding: 12px 30px;
+  height: 36px;
+}
+.mdl .ttl img {
+  width: 42px;
+  height: 42px;
+  margin-right: 10px;
+  margin-bottom: -12px;
+}
+.mdl .ttl .extra {
+  float: right;
+}
+.mdl .ttl .extra button {
+  color: #aaaaaa;
+  background: #ffffff;
+  font-size: 0.6em;
+  width: 85px;
+  height: 37px;
+  border-radius: 100px;
+  cursor: pointer;
+}
+.mdl .ttl .extra button.active {
+  border: 1px solid #42a5e9;
+  color: #42a5e9;
+  background: #ffffff;
+}
+.mdl-load {
+  text-align: center;
+  height: 100px;
+  line-height: 100px;
+  border-bottom: 1px solid #f0f0f0;
+  box-shadow: 0 35px 50px #fafafa;
+  color: #888888;
+}
+.mdl-load img {
+  vertical-align: sub;
+  margin-right: 5px;
+  width: 16px;
+  height: 16px;
+}
+.mdl-w-xs {
+  width: 290px;
+}
+.mdl-w-s {
+  width: 320px;
+}
+.mdl-w-m {
+  width: 605px;
+}
+.mdl-w-l {
+  width: 940px;
+}
+.mdl-w-xl {
+  width: 1245px;
+}
+.notify {
+  height: 173px;
+}
+.notify ul {
+  padding: 0 20px;
+  margin: 10px auto;
+}
+.notify ul li {
+  display: block;
+  font-size: 0.9em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 230%;
+}
+.notify ul li a {
+  color: #888888;
+  text-decoration: none;
+}
+.notify ul li:before {
+  content: '\2022 ';
+  color: #42a5e9;
+  padding-right: 0.5em;
+  font-size: 1.5em;
+  vertical-align: middle;
+}
+.ranking {
+  height: 656px;
+  position: relative;
+}
+.ranking .rank-list .rank-item {
+  width: 100%;
+  height: 105px;
+  background-color: #fdfdfd;
+  border-bottom: 1px solid #ffffff;
+  position: relative;
+}
+.ranking .rank-list .rank-item .image {
+  float: left;
+  width: 105px;
+  height: 105px;
+  background: #e8e8e8;
+}
+.ranking .rank-list .rank-item .image img {
+  width: 105px;
+  height: 105px;
+}
+.ranking .rank-list .rank-item .draft-info {
+  float: left;
+  width: 155px;
+  height: 75px;
+  padding: 15px;
+}
+.ranking .rank-list .rank-item .draft-info .title {
+  font-size: 1.2em;
+  word-wrap: break-word;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: block;
+  margin-top: 30px;
+}
+.ranking .rank-list .rank-item .draft-info .title a {
+  color: #222222;
+}
+.ranking .rank-list .rank-item .draft-info .author {
+  font-size: 1.0em;
+  display: block;
+  margin-top: 6px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.ranking .rank-list .rank-item .draft-info .author a {
+  color: #c8c8c8;
+}
+.ranking .rank-list .rank-item .rank-flag {
+  display: none;
+  width: 0;
+  height: 0;
+  border-top: 50px solid #e5e5e5;
+  border-left: 50px solid transparent;
+  right: 0;
+  position: absolute;
+}
+.ranking .rank-list .rank-item .rank-num {
+  display: none;
+  position: absolute;
+  right: 0;
+  font-size: 2em;
+  margin-right: 4px;
+  color: #666666;
+}
+.ranking .rank-list .rank-item:nth-child(1) {
+  background-color: #faf0f1;
+}
+.ranking .rank-list .rank-item:nth-child(1) .rank-flag {
+  border-top: 50px solid #f1709e;
+}
+.ranking .rank-list .rank-item:nth-child(1) .rank-num {
+  color: #ffffff;
+}
+.ranking .rank-list .rank-item:nth-child(1) .rank-flag,
+.ranking .rank-list .rank-item:nth-child(2) .rank-flag,
+.ranking .rank-list .rank-item:nth-child(3) .rank-flag {
+  display: block;
+}
+.ranking .rank-list .rank-item:nth-child(1) .rank-num,
+.ranking .rank-list .rank-item:nth-child(2) .rank-num,
+.ranking .rank-list .rank-item:nth-child(3) .rank-num {
+  display: block;
+}
+.ranking .rank-list .rank-showmore {
+  width: 100%;
+  height: 65px;
+  line-height: 65px;
+  background-color: #e7e7e7;
+  color: #333333;
+  display: block;
+  font-size: 1.4em;
+  text-align: center;
+  bottom: 0;
+  position: absolute;
+}
+.follow {
+  height: 445px;
+}
+.follow .user {
+  padding: 12px 25px;
+  overflow: hidden;
+}
+.follow .user .head {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  background: #e8e8e8;
+  margin-left: 5px;
+  margin-right: 20px;
+  float: left;
+}
+.follow .user .head img {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+}
+.follow .user .info {
+  float: left;
+  width: 145px;
+}
+.follow .user .info .username {
+  font-size: 1.3em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 8px;
+}
+.follow .user .info .username a {
+  color: #222222;
+}
+.follow .user .info .btn-follow {
+  border-radius: 5px;
+  border: 1px solid #42a5e9;
+  background: #ffffff;
+  color: #42a5e9;
+  font-size: 1.1em;
+  padding: 1px 10px;
+  margin-top: 5px;
+}
+.follow .user .info .btn-follow:hover {
+  border: 1px solid #42a5e9;
+  background: #42a5e9;
+  color: #ffffff;
+}
+.follow .user .info .followed {
+  border: 1px solid #de70a9;
+  background: #ffffff;
+  color: #de70a9;
+}
+.recommend {
+  height: 770px;
+}
+.recommend #recommendDraft {
+  max-height: 706px !important;
+  overflow: hidden;
+  display: none;
+}
+.waves {
+  height: 770px;
+  overflow: hidden;
+}
+.waves .wave {
+  width: 280px;
+  padding: 20px;
+  border-bottom: 1px solid #f0f0f0;
+}
+.waves .wave .info {
+  overflow: hidden;
+  width: 100%;
+}
+.waves .wave .info .head {
+  float: left;
+  background: #e8e8e8;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+.waves .wave .info .head img {
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+}
+.waves .wave .info .user {
+  float: left;
+  width: 200px;
+  margin-top: 5px;
+}
+.waves .wave .info .user .username {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1.2em;
+}
+.waves .wave .info .user .username a {
+  color: #222222;
+}
+.waves .wave .info .user .sendtime {
+  width: 100%;
+  margin-top: 3px;
+  font-size: 0.8em;
+}
+.waves .wave .info .user .sendtime a {
+  color: #888888;
+}
+.waves .wave .content {
+  width: 260px;
+  margin-top: 15px;
+  color: #9f9f9f;
+  line-height: 160%;
+  font-size: 0.9em;
+  background: #fafafa;
+  padding: 10px;
+  word-break: break-all;
+}
+.waves .wave .closed {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.newdraft {
+  height: 516px;
+  position: relative;
+}
+.newdraft .draft-panel {
+  overflow: hidden;
+  padding: 20px 30px;
+  width: 880px;
+  height: 415px;
+  position: absolute;
+  display: none;
+}
+.newdraft .draft-panel .draft {
+  float: left;
+  width: 20%;
+  height: 207px;
+}
+.newdraft .draft-panel .draft a {
+  text-decoration: none;
+  outline: none;
+}
+.newdraft .draft-panel .draft .image {
+  width: 100%;
+  text-align: center;
+  margin-top: 5px;
+}
+.newdraft .draft-panel .draft .image img {
+  max-width: 85%;
+  max-height: 150px;
+  border: 1px solid #e8e8e8;
+}
+.newdraft .draft-panel .draft .info {
+  width: 90%;
+  height: 40px;
+  text-align: center;
+  margin: 0 auto;
+}
+.newdraft .draft-panel .draft .info div {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.newdraft .draft-panel .draft .info div a {
+  color: #222222;
+}
+.newdraft .draft-panel .draft .info .author {
+  font-size: 1.0em;
+  margin-top: 1px;
+}
+.newdraft .draft-panel .draft .info .author a {
+  color: #666666;
+}
+.activitys {
+  width: 1242px;
+  height: 405px;
+  margin-top: 5px;
+}
+.activitys .activity {
+  float: left;
+  width: 413px;
+  height: 405px;
+  border-right: 1px solid #f0f0f0;
+}
+.activitys .activity .title {
+  height: 60px;
+  line-height: 60px;
+  font-size: 1.8em;
+  color: #888888;
+  text-align: center;
+  border-bottom: 1px solid #f0f0f0;
+}
+.activitys .activity .post,
+.activitys .activity .post img {
+  width: 413px;
+  height: 344px;
+  background: #e8e8e8;
+}
+.activitys .activity:nth-last-child(1) {
+  border: none;
+}
+/*# sourceMappingURL=../../../public/css/index.css.map */

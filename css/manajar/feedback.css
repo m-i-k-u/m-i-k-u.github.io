@@ -1,0 +1,116 @@
+@charset "UTF-8";
+/* Global color default list
+ * - Description: Default color
+ * - Baseline Color: #e4acc9
+ */
+/*
+ * COMMON
+ */
+/*
+ * REGISTER PAGE
+ */
+/*
+ * REGISTER PAGE
+ */
+/*
+ * LOGIN PAGE
+ */
+/*
+ * SETTING PAGE
+ */
+/*
+ * DRAWINGS UPLOAD
+ */
+/*
+ * DRWAINGS MANAGER
+ */
+/*
+ * DRAWINGS VIEW
+ */
+/*
+ * DRAWINGS CERNSORING
+ */
+/*
+ * SEARCH RESULT
+ */
+/* Global size parameter
+ * - Baseline Device: Notebook
+ * - Baseline Resolution: 1366*768
+ */
+/*
+ * COMMON
+ */
+/*
+ * REGISTER PAGE
+ */
+/*
+ * LOGIN PAGE
+ */
+/*
+ * FORGET PASSWORD
+ */
+/*
+ * SETTING PAGE
+ */
+/*
+ * DRAWINGS UPLOAD
+ */
+/*
+ * DRAWINGS MANAGER
+ */
+/*
+ * DRAWINGS VIEW
+ */
+/*
+ * DRAWINGS CENSORING
+ */
+/*
+ * SEARCH RESULT
+ */
+.feedback-list {
+  width: 1245px;
+  margin: 80px auto;
+}
+.feedback-list table {
+  width: 100%;
+}
+.feedback-list table img {
+  width: 128px;
+}
+.feedback-list .pagination {
+  display: table;
+  width: 100%;
+  padding: 0;
+  text-align: center;
+  background-color: #ffffff;
+}
+.feedback-list .pagination li {
+  display: inline-block;
+  /* Does not support IE8 or less */
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  margin: 10px;
+  font-size: 1.3em;
+  border-bottom: 3px solid #ffffff;
+  color: #888888;
+  transition: background .3s, color .3s;
+}
+.feedback-list .pagination li a {
+  color: #888888;
+  transition: color .3s;
+}
+.feedback-list .pagination li.active {
+  color: #000000;
+  border-bottom: 3px solid #e29abf;
+}
+.feedback-list .pagination li.disabled {
+  display: none;
+}
+.feedback-list .pagination li:hover {
+  background-color: #e29abf;
+  color: #ffffff;
+}
+.feedback-list .pagination li:hover a {
+  color: #ffffff;
+}

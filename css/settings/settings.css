@@ -1,0 +1,155 @@
+@charset "UTF-8";
+/* Global color default list
+ * - Description: Default color
+ * - Baseline Color: #e4acc9
+ */
+/*
+ * COMMON
+ */
+/*
+ * REGISTER PAGE
+ */
+/*
+ * REGISTER PAGE
+ */
+/*
+ * LOGIN PAGE
+ */
+/*
+ * SETTING PAGE
+ */
+/*
+ * DRAWINGS UPLOAD
+ */
+/*
+ * DRWAINGS MANAGER
+ */
+/*
+ * DRAWINGS VIEW
+ */
+/*
+ * DRAWINGS CERNSORING
+ */
+/*
+ * SEARCH RESULT
+ */
+/* Global size parameter
+ * - Baseline Device: Notebook
+ * - Baseline Resolution: 1366*768
+ */
+/*
+ * COMMON
+ */
+/*
+ * REGISTER PAGE
+ */
+/*
+ * LOGIN PAGE
+ */
+/*
+ * FORGET PASSWORD
+ */
+/*
+ * SETTING PAGE
+ */
+/*
+ * DRAWINGS UPLOAD
+ */
+/*
+ * DRAWINGS MANAGER
+ */
+/*
+ * DRAWINGS VIEW
+ */
+/*
+ * DRAWINGS CENSORING
+ */
+/*
+ * SEARCH RESULT
+ */
+#container {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#container .wrap-settings {
+  width: 1100px;
+  min-height: 1136px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  display: table;
+}
+#container .wrap-settings .sideBar {
+  float: left;
+  width: 240px;
+  min-height: 1136px;
+  height: 100%;
+  background-color: #f3f3f3;
+  border-right: 1px solid #e4acc9;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+#container .wrap-settings .sideBar .title {
+  height: 100px;
+  font-size: 48px;
+  font-family: "黑体";
+  color: #d0d0d0;
+  line-height: calc(120px);
+  text-align: center;
+}
+#container .wrap-settings .sideBar ul {
+  padding: 0;
+}
+#container .wrap-settings .sideBar ul li {
+  display: block;
+  width: 240px;
+  height: 60px;
+  line-height: 60px;
+  color: #9a9a9a;
+  font-size: 20px;
+  text-align: center;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+}
+#container .wrap-settings .sideBar ul li .fa {
+  margin-right: 10px;
+  color: #e4acc9;
+  vertical-align: text-bottom;
+}
+#container .wrap-settings .sideBar ul li.active {
+  width: calc(238px);
+  background-color: #ffffff;
+  color: #555555;
+  border-top: 1px solid #e4acc9;
+  border-bottom: 1px solid #e4acc9;
+  border-left: 3px solid #e4acc9;
+}
+#container .wrap-settings .sideBar ul li.active .fa {
+  margin-left: calc(-3px);
+  font-size: 18px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  display: inline-block;
+}
+#container .wrap-settings .sideBar ul li:hover {
+  background-color: #eaeaea;
+  transition: background-color, 0.3s;
+}
+#container .wrap-settings .sideBar ul li[class="active"]:hover {
+  background-color: #ffffff;
+}
+#container .wrap-settings .content {
+  float: left;
+  width: calc(854px);
+  height: 100%;
+}
+#container .wrap-settings .content .wrap-title {
+  font-size: 34px;
+  font-family: "黑体";
+  color: #e4acc9;
+  margin-top: 50px;
+  margin-left: 50px;
+}

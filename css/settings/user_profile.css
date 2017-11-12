@@ -1,0 +1,162 @@
+@charset "UTF-8";
+/* Global color default list
+ * - Description: Default color
+ * - Baseline Color: #e4acc9
+ */
+/*
+ * COMMON
+ */
+/*
+ * REGISTER PAGE
+ */
+/*
+ * REGISTER PAGE
+ */
+/*
+ * LOGIN PAGE
+ */
+/*
+ * SETTING PAGE
+ */
+/*
+ * DRAWINGS UPLOAD
+ */
+/*
+ * DRWAINGS MANAGER
+ */
+/*
+ * DRAWINGS VIEW
+ */
+/*
+ * DRAWINGS CERNSORING
+ */
+/*
+ * SEARCH RESULT
+ */
+/* Global size parameter
+ * - Baseline Device: Notebook
+ * - Baseline Resolution: 1366*768
+ */
+/*
+ * COMMON
+ */
+/*
+ * REGISTER PAGE
+ */
+/*
+ * LOGIN PAGE
+ */
+/*
+ * FORGET PASSWORD
+ */
+/*
+ * SETTING PAGE
+ */
+/*
+ * DRAWINGS UPLOAD
+ */
+/*
+ * DRAWINGS MANAGER
+ */
+/*
+ * DRAWINGS VIEW
+ */
+/*
+ * DRAWINGS CENSORING
+ */
+/*
+ * SEARCH RESULT
+ */
+#container .wrap-settings .content .wrap-form {
+  float: left;
+  display: table;
+  width: 100%;
+  margin-top: 40px;
+}
+#container .wrap-settings .content .wrap-form .col-form {
+  display: table;
+  height: 50px;
+  line-height: 50px;
+  margin-left: 90px;
+}
+#container .wrap-settings .content .wrap-form .col-form .row-label {
+  float: left;
+  width: 60px;
+  font-size: 18px;
+  text-align: right;
+  margin-right: 20px;
+  color: #888888;
+}
+#container .wrap-settings .content .wrap-form .col-form .row-tips {
+  float: left;
+  color: #9a9a9a;
+  font-size: 14px;
+  margin-left: 20px;
+}
+#container .wrap-settings .content .wrap-form .col-form .row-elm {
+  float: left;
+}
+#container .wrap-settings .content .wrap-form .col-form .row-elm input[type="text"],
+#container .wrap-settings .content .wrap-form .col-form .row-elm input[type="email"],
+#container .wrap-settings .content .wrap-form .col-form .row-elm input[type="password"],
+#container .wrap-settings .content .wrap-form .col-form .row-elm textarea,
+#container .wrap-settings .content .wrap-form .col-form .row-elm select {
+  width: 240px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #d0d0d0;
+  padding: 0 10px;
+}
+#container .wrap-settings .content .wrap-form .col-form .row-elm textarea {
+  width: 300px;
+  height: 90px;
+  padding: 10px;
+  resize: none;
+}
+#container .wrap-settings .content .wrap-form .col-form .row-elm select {
+  width: 110px;
+  margin-right: 5px;
+}
+#container .wrap-settings .content .wrap-form .col-form .row-elm select:nth-child(1) {
+  width: calc(130px);
+}
+#container .wrap-settings .content .wrap-form .col-form .row-elm .elm-sex {
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+}
+#container .wrap-settings .content .wrap-form .col-form .row-elm .elm-sex li {
+  display: block;
+  float: left;
+  height: 20px;
+  line-height: 20px;
+  background-color: #f0f0f0;
+  padding: 3px 8px;
+  margin-right: 10px;
+  color: #000000;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#container .wrap-settings .content .wrap-form .col-form .row-elm .elm-sex li.selected {
+  background-color: #e29abf;
+  color: #ffffff;
+  transition: background-color 0.3s;
+}
+#container .wrap-settings .content .wrap-form .box-button {
+  width: 100%;
+  border-top: 1px solid #f3f3f3;
+  margin-top: 20px;
+  padding-top: 25px;
+  text-align: center;
+}
+#container .wrap-settings .content .wrap-form .box-button button[type="submit"] {
+  width: 270px;
+  height: 50px;
+  border: none;
+  background-color: #e4acc9;
+  color: #ffffff;
+  font-size: 24px;
+  font-family: "STHeitiSC-Light", Helvetica, "微软雅黑 Light", "黑体", "宋体";
+  border-radius: 5px;
+}

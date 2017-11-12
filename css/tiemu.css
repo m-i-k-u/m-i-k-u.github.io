@@ -1,0 +1,269 @@
+/*
+ * Tiemu System Plugin StyleSheet
+ * @Version: 1.0.0
+ * @Author: MoeArt Dev. Team
+ */
+.tiemu-attachment {
+  position: relative;
+  border: 1px solid #f0f0f0;
+  width: 0;
+  height: 0;
+}
+.tiemu-attachment .tiemu-attachment-panel {
+  position: absolute;
+  width: 40px;
+  background: #8e8e8e;
+  margin-left: -40px;
+  margin-top: 20px;
+  padding: 10px 0;
+  color: #ffffff;
+  font-size: 1.5em;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  display: none;
+}
+.tiemu-attachment .tiemu-attachment-panel i {
+  cursor: pointer;
+  margin: 5px 0;
+  margin-left: 2px;
+  transition: color .3s;
+}
+.tiemu-attachment .tiemu-attachment-panel i:hover {
+  color: #e29abf;
+}
+.tiemu-attachment .tiemu-attachment-placeholder {
+  position: absolute;
+  background-color: #f0f0f0;
+  font-size: 48px;
+  color: #d4d4d4;
+  text-align: center;
+  display: none;
+  z-index: 1000;
+}
+.tiemu-attachment:hover .tiemu-attachment-panel {
+  display: block;
+}
+.tiemu-new,
+.tiemu-item {
+  position: absolute;
+  float: left;
+  display: table;
+  opacity: 0;
+  transition: opacity .3s, margin .3s;
+  z-index: 999;
+  transform-origin: 0% 50%;
+}
+.tiemu-new .tiemu-item-dot,
+.tiemu-item .tiemu-item-dot {
+  float: left;
+  position: absolute;
+  background-color: #ffffff;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  margin-top: 5px;
+  border: 1px solid #ababab;
+}
+.tiemu-new .tiemu-item-arrow,
+.tiemu-item .tiemu-item-arrow {
+  float: left;
+  width: 0px;
+  height: 0px;
+  border: 10px solid transparent;
+  border-right: 10px solid rgba(0, 0, 0, 0.8);
+  margin-left: -5px;
+  position: absolute;
+  z-index: -1;
+}
+.tiemu-new .tiemu-item-content,
+.tiemu-item .tiemu-item-content {
+  float: left;
+  height: 20px;
+  line-height: 20px;
+  color: #ffffff;
+  font-size: 14px;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 0 10px 0 5px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  margin-left: 15px;
+}
+.tiemu-new {
+  opacity: 1;
+  margin-top: -3px;
+  transform: scale(0);
+  transform: rotateY(90deg);
+  transition: all .3s;
+}
+.tiemu-new .tiemu-item-dot {
+  width: 13px;
+  height: 13px;
+  margin-top: 8px;
+}
+.tiemu-new .tiemu-item-arrow {
+  border: 15px solid transparent;
+  border-right: 15px solid rgba(0, 0, 0, 0.8);
+  margin-left: -5px;
+}
+.tiemu-new .tiemu-item-content {
+  height: 30px;
+  line-height: 30px;
+  margin-left: 25px;
+}
+.tiemu-new .tiemu-item-content input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #3ca7f1;
+  color: #00c3f1;
+}
+.tiemu-new .tiemu-item-content input:focus {
+  outline: none;
+}
+.tiemu-new .tiemu-item-content button {
+  font-size: 12px;
+  background-color: transparent;
+  border: 1px solid #FF65B5;
+  color: #FF65B5;
+}
+.tiemu-new .tiemu-item-content button:focus {
+  outline: none;
+}
+/*
+ * Option box
+ */
+.tiemu-option div {
+  margin: 15px auto;
+}
+.tiemu-option div label:nth-child(1) {
+  width: 70px;
+  text-align: right;
+  display: inline-block;
+  margin-left: 40px;
+  margin-right: 5px;
+  color: #555555;
+}
+.tiemu-option div label:nth-child(2),
+.tiemu-option div label:nth-child(3),
+.tiemu-option div label:nth-child(4) {
+  margin-left: 5px;
+  color: #888888;
+}
+.tiemu-option div:nth-child(1) {
+  margin-top: 20px;
+}
+@supports (-ms-ime-align:auto) {
+  .tiemu-option div {
+    /* Fix for Microsoft Edge */
+    margin: 5px auto;
+  }
+}
+.tiemu-option p {
+  color: #aaaaaa;
+  font-size: 12px;
+  text-align: center;
+}
+.tiemu-option p a {
+  cursor: pointer;
+}
+.tiemu-gear {
+  color: #999999;
+  cursor: pointer;
+  transition: all .3s;
+}
+.tiemu-gear:hover {
+  color: #555555;
+}
+/*
+ * Input Range Silder
+ */
+input[type=range] {
+  -webkit-appearance: none;
+  width: 200px;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 12px;
+  cursor: pointer;
+  box-shadow: 0.4px 0.4px 1px rgba(0, 0, 0, 0), 0px 0px 0.4px rgba(13, 13, 13, 0);
+  background: rgba(0, 0, 0, 0.04);
+  border-radius: 3px;
+  border: 0.1px solid rgba(1, 1, 1, 0.14);
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 1.4px 1.4px 2.9px rgba(0, 0, 0, 0.3), 0px 0px 1.4px rgba(13, 13, 13, 0.3);
+  border: 4.6px solid rgba(0, 0, 0, 0);
+  height: 24px;
+  width: 24px;
+  border-radius: 26px;
+  background: #ffffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -7.1px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: rgba(36, 36, 36, 0.04);
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 12px;
+  cursor: pointer;
+  box-shadow: 0.4px 0.4px 1px rgba(0, 0, 0, 0), 0px 0px 0.4px rgba(13, 13, 13, 0);
+  background: rgba(0, 0, 0, 0.04);
+  border-radius: 3px;
+  border: 0.1px solid rgba(1, 1, 1, 0.14);
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 1.4px 1.4px 2.9px rgba(0, 0, 0, 0.3), 0px 0px 1.4px rgba(13, 13, 13, 0.3);
+  border: 4.6px solid rgba(0, 0, 0, 0);
+  height: 15px;
+  width: 15px;
+  border-radius: 26px;
+  background: #ffffff;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 12px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: rgba(0, 0, 0, 0.04);
+  border: 0.1px solid rgba(1, 1, 1, 0.14);
+  border-radius: 6px;
+  box-shadow: 0.4px 0.4px 1px rgba(0, 0, 0, 0), 0px 0px 0.4px rgba(13, 13, 13, 0);
+}
+input[type=range]::-ms-fill-upper {
+  background: rgba(0, 0, 0, 0.04);
+  border: 0.1px solid rgba(1, 1, 1, 0.14);
+  border-radius: 6px;
+  box-shadow: 0.4px 0.4px 1px rgba(0, 0, 0, 0), 0px 0px 0.4px rgba(13, 13, 13, 0);
+}
+input[type=range]::-ms-thumb {
+  box-shadow: 1.4px 1.4px 2.9px rgba(0, 0, 0, 0.3), 0px 0px 1.4px rgba(13, 13, 13, 0.3);
+  border: 4.6px solid rgba(0, 0, 0, 0);
+  height: 12px;
+  width: 12px;
+  border-radius: 26px;
+  background: #ffffff;
+  cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: rgba(0, 0, 0, 0.04);
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: rgba(36, 36, 36, 0.04);
+}

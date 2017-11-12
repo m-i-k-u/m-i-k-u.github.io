@@ -1,0 +1,533 @@
+@charset "UTF-8";
+/* Global color default list
+ * - Description: Default color
+ * - Baseline Color: #e4acc9
+ */
+/*
+ * COMMON
+ */
+/*
+ * REGISTER PAGE
+ */
+/*
+ * REGISTER PAGE
+ */
+/*
+ * LOGIN PAGE
+ */
+/*
+ * SETTING PAGE
+ */
+/*
+ * DRAWINGS UPLOAD
+ */
+/*
+ * DRWAINGS MANAGER
+ */
+/*
+ * DRAWINGS VIEW
+ */
+/*
+ * DRAWINGS CERNSORING
+ */
+/*
+ * SEARCH RESULT
+ */
+/* Global size parameter
+ * - Baseline Device: Notebook
+ * - Baseline Resolution: 1366*768
+ */
+/*
+ * COMMON
+ */
+/*
+ * REGISTER PAGE
+ */
+/*
+ * LOGIN PAGE
+ */
+/*
+ * FORGET PASSWORD
+ */
+/*
+ * SETTING PAGE
+ */
+/*
+ * DRAWINGS UPLOAD
+ */
+/*
+ * DRAWINGS MANAGER
+ */
+/*
+ * DRAWINGS VIEW
+ */
+/*
+ * DRAWINGS CENSORING
+ */
+/*
+ * SEARCH RESULT
+ */
+@import "/css/font-source-han-sans.css";
+/*
+ * Common
+ */
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: "微软雅黑", "Microsoft Yahei", "STHeitiSC-Light", Helvetica, "Ubuntu", "宋体", sans-serif;
+  background-color: #ffffff;
+  min-width: calc(1265px);
+}
+a {
+  color: #e4acc9;
+  text-decoration: none;
+}
+input:focus {
+  outline: #e4acc9 solid thin;
+}
+.btn-primary {
+  background-color: #4d82c6;
+}
+.btn-error {
+  background-color: #d30e09;
+  border-bottom: 1px solid #d30e09;
+}
+.elm-userlevel {
+  background-color: #aaaaaa;
+  font-size: 0.5em;
+  color: #ffffff;
+  padding: 0 3px;
+  vertical-align: middle;
+  display: inline-block;
+  transform: scale(0.6);
+  margin-left: -6px;
+  margin-top: -3px;
+}
+/*
+ * Main Header Area
+ */
+header .main-header {
+  width: 100%;
+  height: 120px;
+  background: url('/img/bannerDefBg.png');
+}
+header .main-header .inner {
+  width: 1245px;
+  height: 120px;
+  margin: 0 auto;
+}
+header .main-header .inner .l-inner {
+  float: left;
+}
+header .main-header .inner .l-inner .item-logo {
+  height: 120px;
+  line-height: 120px;
+}
+header .main-header .inner .l-inner .item-logo img {
+  height: 50px;
+  vertical-align: middle;
+}
+header .main-header .inner .r-inner {
+  float: right;
+  height: 120px;
+}
+header .main-header .inner .r-inner .box-login {
+  position: relative;
+  width: 215px;
+  height: 90px;
+  top: 50%;
+  margin-top: calc(-45px);
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  display: none;
+}
+header .main-header .inner .r-inner .box-login .l-box-login {
+  float: left;
+  width: 85px;
+  height: 90px;
+  line-height: 90px;
+  text-align: center;
+}
+header .main-header .inner .r-inner .box-login .l-box-login img {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  vertical-align: middle;
+}
+header .main-header .inner .r-inner .box-login .r-box-login {
+  float: left;
+  width: calc(115px);
+  height: 90px;
+  margin-left: 5px;
+}
+header .main-header .inner .r-inner .box-login .r-box-login span {
+  display: block;
+  width: 100%;
+}
+header .main-header .inner .r-inner .box-login .r-box-login .username {
+  font-size: 18px;
+  margin-top: 24px;
+  width: 120px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+header .main-header .inner .r-inner .box-login .r-box-login .username a {
+  color: #000000;
+}
+header .main-header .inner .r-inner .box-login .r-box-login .info {
+  margin-top: 5px;
+}
+header .main-header .inner .r-inner #loginBox-logged {
+  transition: background-color 0.3s;
+}
+header .main-header .inner .r-inner #loginBox-logged .menu-box-login {
+  display: none;
+  padding: 0;
+  width: 100%;
+  margin-top: 150px;
+  border-top: 1px solid #f0f0f0;
+  padding-left: 10px;
+}
+header .main-header .inner .r-inner #loginBox-logged .menu-box-login li {
+  display: block;
+  float: left;
+  background: #888888;
+  font-size: 20px;
+  border-radius: 5px;
+  width: 38px;
+  height: 38px;
+  text-align: center;
+  margin: 10px 5px;
+  line-height: 28px;
+  opacity: 0.9;
+}
+header .main-header .inner .r-inner #loginBox-logged .menu-box-login li a {
+  display: block;
+  color: #fff;
+  width: 28px;
+  height: 28px;
+  padding: 5px;
+  border-radius: 5px;
+}
+header .main-header .inner .r-inner #loginBox-logged .menu-box-login li:hover {
+  opacity: 1;
+}
+header .main-header .inner .r-inner .box-login-quick {
+  position: relative;
+  width: 240px;
+  height: 120px;
+  margin-top: 0px;
+  background-color: #ffffff;
+  border: 3px solid #f18eb3;
+  display: none;
+}
+header .main-header .inner .r-inner .box-login-quick .l-box-login {
+  float: left;
+  width: 185px;
+}
+header .main-header .inner .r-inner .box-login-quick .l-box-login input {
+  border: 0;
+  background: #f5f5f5;
+  padding: 7px 10px;
+  width: 130px;
+  margin-left: 20px;
+}
+header .main-header .inner .r-inner .box-login-quick .l-box-login input:nth-child(1) {
+  margin-top: 30px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom: 1px solid #e6e6e6;
+}
+header .main-header .inner .r-inner .box-login-quick .l-box-login input:focus {
+  outline: none;
+}
+header .main-header .inner .r-inner .box-login-quick .r-box-login {
+  float: left;
+  width: 50px;
+  margin-top: 48px;
+}
+header .main-header .inner .r-inner .box-login-quick .r-box-login a {
+  color: #000000;
+  font-size: 1.2em;
+}
+header .main-header .inner .r-inner #loginBox-logout {
+  font-size: 18px;
+  text-align: center;
+  line-height: 90px;
+}
+header .main-header .inner .r-inner #loginBox-logout a {
+  text-decoration: none;
+  color: #111;
+  cursor: pointer;
+  outline: none;
+}
+/*
+ * Main Navigation Bar
+ */
+header .top-nav {
+  width: 100%;
+  height: 55px;
+  background-color: #ffffff;
+  border-bottom: 3px solid #e4acc9;
+}
+header .top-nav .inner {
+  width: 1245px;
+  height: 55px;
+  margin: 0 auto;
+}
+header .top-nav .inner .main-menu {
+  float: left;
+  padding: 0;
+  margin: 0;
+  height: 55px;
+  line-height: 55px;
+}
+header .top-nav .inner .main-menu a {
+  color: #000000;
+  text-decoration: none;
+}
+header .top-nav .inner .main-menu .item-menu {
+  float: left;
+  display: block;
+  font-size: 16px;
+  padding: 0 20px;
+  color: #555555;
+}
+header .top-nav .inner .main-menu .item-menu i {
+  color: #e4acc9;
+}
+header .top-nav .inner .main-menu .item-menu:hover {
+  background-color: #fff7fb;
+}
+header .top-nav .inner .main-menu .home {
+  font-size: 20px;
+}
+header .top-nav .inner .main-menu .split {
+  border-right: 0 solid #e4e4e4;
+  padding: 0;
+  position: relative;
+  height: 25px;
+  top: 50%;
+  margin-top: -12.5px;
+}
+header .top-nav .inner .main-menu .current {
+  border-bottom: 3px solid #f56bb2;
+}
+header .top-nav .inner .extra {
+  float: right;
+}
+header .top-nav .inner .extra input:focus {
+  outline: none;
+}
+header .top-nav .inner .extra .searchbox {
+  display: none;
+  float: left;
+  margin-right: 15px;
+}
+header .top-nav .inner .extra .searchbox .input-keyword {
+  font-size: 1.1em;
+  border: none;
+  margin-top: 16px;
+  width: 150px;
+  background: #fafafa;
+  padding: 3px 10px;
+}
+header .top-nav .inner .extra .searchbox .btn-submit-search {
+  display: none;
+}
+header .top-nav .inner .extra .icon {
+  float: left;
+  font-size: 1.4em;
+  margin-top: 16px;
+  color: #dddddd;
+  width: 50px;
+  border-left: 1px solid #f0f0f0;
+  text-align: center;
+  cursor: pointer;
+}
+header .top-nav .inner .extra .icon:hover {
+  color: #c5c5c5;
+}
+header .top-nav .inner .extra .btn {
+  float: left;
+}
+header .top-nav .inner .extra .btn a {
+  display: block;
+  background: #e4acc9;
+  color: #ffffff;
+  height: 40px;
+  line-height: 40px;
+  width: 120px;
+  text-align: center;
+  margin-top: 6.5px;
+  border-radius: 3px;
+}
+header .top-nav .inner .extra .btn a:hover {
+  background: #e29abf;
+}
+/*
+ * Footer Area
+ */
+footer {
+  background: #ffffff;
+  border-top: 3px solid #e4acc9;
+}
+footer .footer-container {
+  width: 1245px;
+  margin: 0 auto;
+  margin-top: 30px;
+  height: 160px;
+}
+footer .footer-container .footer-item {
+  float: left;
+  width: 200px;
+}
+footer .footer-container .footer-item .title {
+  font-size: 1.1em;
+  color: #b9b9b9;
+}
+footer .footer-container .footer-item p {
+  line-height: 165%;
+  margin-top: 15px;
+}
+footer .footer-container .footer-item p a {
+  font-size: 1em;
+  margin-right: 15px;
+  color: #888888;
+}
+footer .footer-container .weibo,
+footer .footer-container .qqqun {
+  width: 92px;
+  float: right;
+}
+footer .footer-container .weibo img,
+footer .footer-container .qqqun img {
+  margin-top: 15px;
+  width: 92px;
+  height: 92px;
+}
+footer .footer-container .qqqun {
+  margin-right: 20px;
+}
+footer .footer-bottom {
+  width: 97%;
+  height: 150px;
+  border-top: 1px solid #e4e4e4;
+  margin: 0 auto;
+}
+footer .footer-bottom .inner {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  text-align: center;
+  color: #bebebe;
+  font-size: 14px;
+  text-decoration: none;
+}
+footer .footer-bottom .moecat {
+  background: url(/img/moecat_small.png) no-repeat;
+  width: 95px;
+  height: 45px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+footer .footer-bottom p {
+  margin: 0;
+  margin-top: 10px;
+  font-size: 12px;
+}
+footer .footer-bottom p a {
+  color: #bebebe;
+  text-decoration: none;
+}
+/*
+ * Container
+ */
+#container {
+  width: 100%;
+  min-height: 500px;
+  background-color: #e8e8e8;
+  display: table;
+}
+/*
+ * Tips of Layer
+ */
+.tips-text {
+  font-size: 14px;
+}
+textarea {
+  resize: none;
+}
+button {
+  border: none;
+  background-color: #e4acc9;
+  color: #ffffff;
+  font-size: 24px;
+  font-family: "STHeitiSC-Light", Helvetica, "微软雅黑 Light", "黑体", "宋体";
+  border-radius: 5px;
+}
+button:hover {
+  background-color: #e29abf;
+  transition: background-color, 0.3s;
+}
+button:disabled {
+  background-color: #c5c5c5;
+  transition: background-color, 0.3s;
+}
+/*
+ * Quick Access
+ */
+.quick-access {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 38px;
+}
+.quick-access button {
+  width: 38px;
+  height: 38px;
+  border-radius: 0;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  float: left;
+  margin-bottom: 3px;
+  position: relative;
+}
+.quick-access button .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  right: 110%;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+.quick-access button .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent rgba(0, 0, 0, 0.5);
+}
+.quick-access button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.quick-access button:hover .tooltiptext {
+  visibility: visible;
+}
+.quick-access button:focus {
+  outline: none !important;
+}

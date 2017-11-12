@@ -1,0 +1,150 @@
+@charset "UTF-8";
+/* Global color default list
+ * - Description: Default color
+ * - Baseline Color: #e4acc9
+ */
+/*
+ * COMMON
+ */
+/*
+ * INDEX HOMEPAGE
+ */
+/*
+ * REGISTER PAGE
+ */
+/*
+ * REGISTER PAGE
+ */
+/*
+ * LOGIN PAGE
+ */
+/*
+ * SETTING PAGE
+ */
+/*
+ * DRAWINGS UPLOAD
+ */
+/*
+ * DRWAINGS MANAGER
+ */
+/*
+ * DRAWINGS VIEW
+ */
+/*
+ * DRAWINGS CERNSORING
+ */
+/*
+ * SEARCH RESULT
+ */
+/* Global size parameter
+ * - Baseline Device: Notebook
+ * - Baseline Resolution: 1366*768
+ */
+/*
+ * COMMON
+ */
+/*
+ * INDEX HOMEPAGE
+ */
+/*
+ * REGISTER PAGE
+ */
+/*
+ * LOGIN PAGE
+ */
+/*
+ * FORGET PASSWORD
+ */
+/*
+ * SETTING PAGE
+ */
+/*
+ * DRAWINGS UPLOAD
+ */
+/*
+ * DRAWINGS MANAGER
+ */
+/*
+ * DRAWINGS VIEW
+ */
+/*
+ * DRAWINGS CENSORING
+ */
+/*
+ * SEARCH RESULT
+ */
+body {
+  background-color: #e5e5e5 !important;
+}
+#container {
+  background: none !important;
+  background-image: none !important;
+  background-color: #e5e5e5 !important;
+}
+#container .wrap-view {
+  width: 100%;
+  margin: 0;
+}
+#container .wrap-view .layout-content {
+  width: 100%;
+  background-color: #e5e5e5;
+}
+#container .wrap-view .layout-content .wrap-header .wrap-panel {
+  padding-top: 54px;
+  position: absolute;
+  margin-left: 12px;
+}
+#container .wrap-view .layout-content .wrap-draft .tiemu-attachment {
+  border: none;
+}
+#container .wrap-view .layout-content .wrap-desc-po {
+  width: 720px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  overflow: auto;
+}
+#container .wrap-view .layout-content .wrap-desc-po .wrap-desc {
+  float: left;
+  width: 500px;
+  margin-top: 30px;
+}
+#container .wrap-view .layout-content .wrap-desc-po .wrap-desc .sect-title {
+  height: 45px;
+  line-height: 45px;
+  font-size: 1.7em;
+}
+#container .wrap-view .layout-content .wrap-desc-po .wrap-desc p {
+  font-size: 0.9em;
+}
+#container .wrap-view .layout-content .wrap-desc-po .wrap-po-info {
+  float: left;
+  height: 235px;
+}
+#container .wrap-view .layout-content .wrap-desc-po .wrap-po-info img {
+  width: 120px;
+  height: 120px;
+}
+#container .wrap-view .layout-comment {
+  position: absolute;
+  right: -275px;
+  z-index: 1001;
+}
+#container .wrap-view .layout-comment .elm-showhide {
+  position: fixed;
+  width: 25px;
+  padding: 20px 0;
+  margin-left: -25px;
+  background-color: #e29abf;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 50px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  cursor: pointer;
+}
+#container .wrap-view .layout-comment .wrap-comment {
+  position: fixed;
+  width: 275px;
+  margin-top: 0;
+}
+/*# sourceMappingURL=../../../../public/css/drawings/view.full.css.map */

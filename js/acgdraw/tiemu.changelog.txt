@@ -1,0 +1,112 @@
+Tiemu System
+
+1.0.2017.0625
+----------------------------
+
+x Fixed tiemu object has white space between content and arrow
+x Fixed tiemu option slider dislocation
++ Added text tips to tiemu attachment panel
+
+
+
+1.0.2017.0617
+----------------------------
+
+x Fixed after tiemu launched, no comment tips still showing up
++ Add tiemu comment empty notice
+x Disabled context menu of tiemu canvas
+
+
+
+1.0.2017.0205
+----------------------------
+
++ Added tiemu switch via cookies
+x Fixed white screen in low speed network
+
+
+
+1.0.2017.0204
+----------------------------
+
+x Fixed only one tiemu will show three tiemus with overlapping
+
+
+
+1.0.2016.1208
+----------------------------
+
+x Fixed tiemu just send and like it will cause issue
+
+
+
+1.0.2016.0929
+----------------------------
+
++ Added tiemu vote module
+x Changed downloader save login using download.js
+
+
+
+1.0.2016.0927
+----------------------------
+
+x Changed data format for security reason
++ Added Attachment Downloader
+
+
+
+1.0.2016.0926
+----------------------------
+
++ Added Fullscreen support
++ Added Placeholder when image loading
+= Load comments avatar on demand
++ Added page drag and scroll support
+= Start up tiemu player engine after full loaded
+
+
+
+1.0.2016.0924
+----------------------------
+
++ Added Tiemu switch
+= Optimizated cookies sync code
++ Added comment loader
++ Added Tiemu player
+x Bind event for tiemu switcher
++ Added Bluescreen
+
+
+
+1.0.2016.0923
+----------------------------
+
++ Added Tiemu Launcher with login check
++ Added Tiemu Receiver
+= Optimizated Tiemu destory logic
+x Changed element event listen method
++ Added comment render
++ Added Tiemu custom options
++ Added Tiemu Launcher hotkey support
+x Detach a language options
+
+
+
+1.0.2016.0922
+----------------------------
+
++ Added debugger or logging supports (debug mode)
++ Added Tiemu render and demo
++ Added position process supports (onclick)
+= Putting Tiemu stylesheets in 'tiemu.less'
+
+
+
+1.0 (2016-09-21)
+----------------------------
+
++ Build base plugin
++ Added attachment render (canvas supports)
++ Added attachment panel control
++ Added attachment render finish callback

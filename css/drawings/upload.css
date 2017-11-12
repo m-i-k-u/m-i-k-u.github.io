@@ -1,0 +1,371 @@
+@charset "UTF-8";
+/* Global color default list
+ * - Description: Default color
+ * - Baseline Color: #e4acc9
+ */
+/*
+ * COMMON
+ */
+/*
+ * REGISTER PAGE
+ */
+/*
+ * REGISTER PAGE
+ */
+/*
+ * LOGIN PAGE
+ */
+/*
+ * SETTING PAGE
+ */
+/*
+ * DRAWINGS UPLOAD
+ */
+/*
+ * DRWAINGS MANAGER
+ */
+/*
+ * DRAWINGS VIEW
+ */
+/*
+ * DRAWINGS CERNSORING
+ */
+/*
+ * SEARCH RESULT
+ */
+/* Global size parameter
+ * - Baseline Device: Notebook
+ * - Baseline Resolution: 1366*768
+ */
+/*
+ * COMMON
+ */
+/*
+ * REGISTER PAGE
+ */
+/*
+ * LOGIN PAGE
+ */
+/*
+ * FORGET PASSWORD
+ */
+/*
+ * SETTING PAGE
+ */
+/*
+ * DRAWINGS UPLOAD
+ */
+/*
+ * DRAWINGS MANAGER
+ */
+/*
+ * DRAWINGS VIEW
+ */
+/*
+ * DRAWINGS CENSORING
+ */
+/*
+ * SEARCH RESULT
+ */
+#container {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#container .wrap-upload {
+  width: 1100px;
+  min-height: 640px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  display: table;
+}
+#container .wrap-upload .wrap-title {
+  font-size: 42px;
+  color: #e4acc9;
+  margin: 25px 50px;
+  font-family: "黑体", serif;
+}
+#container .wrap-upload .wrap-uploadbox {
+  width: calc(1040px);
+  height: 280px;
+  background: #222222;
+  box-shadow: 0 0 50px #000000 inset;
+  text-align: center;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  padding: 10px 30px;
+}
+#container .wrap-upload .wrap-uploadbox .elm-upload {
+  display: inline-block;
+  *display: inline;
+  width: calc(203px);
+  height: calc(233px);
+  line-height: 230px;
+  border-radius: 10px;
+  margin: 22px 5px;
+  vertical-align: middle;
+  background-size: cover !important;
+  background-position: center center !important;
+  position: relative;
+}
+#container .wrap-upload .wrap-uploadbox .elm-upload .elm-upload-mask {
+  width: 100%;
+  height: 0;
+  background: rgba(222, 118, 172, 0.5);
+  transition: height .3s;
+  border-radius: 10px;
+  position: absolute;
+  float: left;
+}
+#container .wrap-upload .wrap-uploadbox .elm-upload .elm-upload-del {
+  border: 2px solid #ffffff;
+  background-color: #222222;
+  width: 21px;
+  height: 21px;
+  line-height: 21px;
+  text-align: center;
+  top: -8px;
+  right: -8px;
+  position: absolute;
+  display: none;
+  cursor: pointer;
+  font-size: 12px;
+  color: #ffffff;
+  border-radius: 100%;
+  -moz-transition: background-color 0.3s;
+  -ms-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+#container .wrap-upload .wrap-uploadbox .elm-upload .elm-upload-del:hover {
+  background-color: rgba(222, 118, 172, 0.5);
+}
+#container .wrap-upload .wrap-uploadbox .elm-upload:hover .elm-upload-del {
+  display: block;
+}
+#container .wrap-upload .wrap-uploadbox .elm-add {
+  width: 200px;
+  height: 230px;
+  border: 2px dashed #FFFFFF;
+  cursor: pointer;
+  background-image: none;
+}
+#container .wrap-upload .wrap-uploadbox .elm-add img {
+  vertical-align: middle;
+  margin-top: 5px;
+}
+#container .wrap-upload .wrap-uploadbox .elm-add .add-tips {
+  position: absolute;
+  width: calc(170px);
+  color: #fff;
+  top: 170px;
+  white-space: normal;
+  word-break: break-word;
+  line-height: 135%;
+  padding: 0 15px;
+  font-size: 12px;
+  display: none;
+}
+#container .wrap-upload .wrap-uploadbox .elm-add:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+#container .wrap-upload .wrap-uploadbox .elm-add-mask {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 999;
+}
+#container .wrap-upload .wrap-uploadbox .elm-uploading {
+  width: 200px;
+  height: 230px;
+  border: 2px dashed #FFFFFF;
+  cursor: pointer;
+  background-image: none;
+}
+#container .wrap-upload .wrap-uploadbox .elm-uploading p {
+  margin: 0;
+  font-size: 20px;
+  color: #ffffff;
+}
+#container .wrap-upload .wrap-form-mask {
+  position: absolute;
+  width: 1100px;
+  text-align: center;
+  font-size: 38px;
+  font-weight: bold;
+  color: #e4acc9;
+  background: rgba(255, 255, 255, 0.9);
+  z-index: 999;
+  display: none;
+}
+#container .wrap-upload .wrap-form {
+  width: 750px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+#container .wrap-upload .wrap-form .col-form {
+  display: table;
+  height: 50px;
+  line-height: 50px;
+  margin-left: 90px;
+}
+#container .wrap-upload .wrap-form .col-form .row-label {
+  float: left;
+  width: 60px;
+  font-size: 18px;
+  text-align: right;
+  margin-right: 20px;
+  color: #888888;
+}
+#container .wrap-upload .wrap-form .col-form .row-tips {
+  float: left;
+  color: #9a9a9a;
+  font-size: 14px;
+  margin-left: 20px;
+}
+#container .wrap-upload .wrap-form .col-form .row-elm {
+  float: left;
+}
+#container .wrap-upload .wrap-form .col-form .row-elm input[type="text"],
+#container .wrap-upload .wrap-form .col-form .row-elm textarea,
+#container .wrap-upload .wrap-form .col-form .row-elm select {
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #d0d0d0;
+  padding: 0 10px;
+}
+#container .wrap-upload .wrap-form .col-form .row-elm textarea {
+  width: 400px;
+  height: 90px;
+  padding: 10px;
+  resize: none;
+  margin-top: 10px;
+  margin-bottom: calc(-10px);
+}
+#container .wrap-upload .wrap-form .col-form .row-elm input[type="text"] {
+  width: 400px;
+}
+#container .wrap-upload .wrap-form .col-form .row-elm input[id="originUrl"] {
+  width: 290px;
+}
+#container .wrap-upload .wrap-form .col-form .row-elm input[type="checkbox"] {
+  vertical-align: middle;
+}
+#container .wrap-upload .wrap-form .col-form .row-elm select {
+  width: 150px;
+  height: calc(32px);
+  margin-right: 5px;
+  vertical-align: middle;
+}
+#container .wrap-upload .wrap-form .col-form .row-elm select[id="originType"] {
+  width: 100px;
+}
+#container .wrap-upload .wrap-form .col-form .row-elm .elm-protect,
+#container .wrap-upload .wrap-form .col-form .row-elm .elm-priv {
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+}
+#container .wrap-upload .wrap-form .col-form .row-elm .elm-protect li,
+#container .wrap-upload .wrap-form .col-form .row-elm .elm-priv li {
+  display: block;
+  float: left;
+  height: 20px;
+  line-height: 20px;
+  background-color: #f0f0f0;
+  padding: 3px 8px;
+  margin-right: 10px;
+  color: #000000;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#container .wrap-upload .wrap-form .col-form .row-elm .elm-protect li.selected,
+#container .wrap-upload .wrap-form .col-form .row-elm .elm-priv li.selected {
+  background-color: #e29abf;
+  color: #ffffff;
+  transition: background-color 0.3s;
+}
+#container .wrap-upload .wrap-form .col-form .row-elm .btn-ofile {
+  background-color: #f0f0f0;
+  height: 25px;
+  line-height: 25px;
+  margin-top: 13px;
+  border-radius: 5px;
+  font-size: 15px;
+  width: 210px;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+}
+#container .wrap-upload .wrap-form .col-form .row-elm .btn-ofile .btn-ofile-mask {
+  height: 100%;
+  width: 0;
+  background-color: #e29abf;
+  border-radius: 5px;
+  position: absolute;
+  transition: width, .3s;
+}
+#container .wrap-upload .wrap-form .col-form .row-elm .btn-ofile .btn-ofile-txt {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+}
+#container .wrap-upload .wrap-form .col-form .row-elm .btn-ofile:hover {
+  background-color: #e4acc9;
+  color: #ffffff;
+  transition: background-color, 0.3s;
+}
+#container .wrap-upload .wrap-form .col-form .tips-help a {
+  cursor: pointer;
+}
+#container .wrap-upload .wrap-form .col-form .tips-help a:hover {
+  color: #e29abf;
+}
+#container .wrap-upload .wrap-form .box-button {
+  width: 100%;
+  border-top: 1px solid #f3f3f3;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 25px;
+  text-align: center;
+}
+#container .wrap-upload .wrap-form .box-button button[type="submit"] {
+  width: 270px;
+  height: 50px;
+  border: none;
+  color: #ffffff;
+  font-size: 24px;
+  font-family: "STHeitiSC-Light", Helvetica, "微软雅黑　Light", "微软雅黑", sans-serif;
+  border-radius: 5px;
+}
+#container .wrap-upload .wrap-form .col-upload-tips {
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+#container .wrap-upload .wrap-form .col-upload-tips p {
+  color: #c5c5c5;
+  margin: 5px 0;
+  font-size: 12px;
+}
+.wrap-uploadbox::-webkit-scrollbar {
+  height: 10px;
+}
+.wrap-uploadbox::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset006pxrgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+.wrap-uploadbox::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+}
+.wrap-uploadbox::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(0, 0, 0, 0.9);
+}
+.moxie-shim-html5 {
+  display: none;
+}

@@ -1,0 +1,121 @@
+@charset "UTF-8";
+/* Global color default list
+ * - Description: Default color
+ * - Baseline Color: #e4acc9
+ */
+/*
+ * COMMON
+ */
+/*
+ * REGISTER PAGE
+ */
+/*
+ * REGISTER PAGE
+ */
+/*
+ * LOGIN PAGE
+ */
+/*
+ * SETTING PAGE
+ */
+/*
+ * DRAWINGS UPLOAD
+ */
+/*
+ * DRWAINGS MANAGER
+ */
+/*
+ * DRAWINGS VIEW
+ */
+/*
+ * DRAWINGS CERNSORING
+ */
+/*
+ * SEARCH RESULT
+ */
+/* Global size parameter
+ * - Baseline Device: Notebook
+ * - Baseline Resolution: 1366*768
+ */
+/*
+ * COMMON
+ */
+/*
+ * REGISTER PAGE
+ */
+/*
+ * LOGIN PAGE
+ */
+/*
+ * FORGET PASSWORD
+ */
+/*
+ * SETTING PAGE
+ */
+/*
+ * DRAWINGS UPLOAD
+ */
+/*
+ * DRAWINGS MANAGER
+ */
+/*
+ * DRAWINGS VIEW
+ */
+/*
+ * DRAWINGS CENSORING
+ */
+/*
+ * SEARCH RESULT
+ */
+* {
+  font-family: "PingFangSC-Ultralight", "STHeitiSC-Light", "XHei Intel", "华文细黑", Helvetica, "Ubuntu", "微软雅黑", "Microsoft Yahei", "宋体", sans-serif;
+}
+* .background {
+  background-image: url(/img/manager_bg.jpg);
+  background-repeat: no-repeat;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 603px;
+  height: 522px;
+  z-index: -999;
+}
+* .manager-navbar {
+  height: 100px;
+  padding-left: 60px;
+  padding-top: 28px;
+}
+* .manager-navbar .mdl-layout-title {
+  font-size: 36px;
+  line-height: 64%;
+}
+* .manager-navbar .mdl-layout-title small {
+  font-size: 15px;
+}
+* .nav-backtop {
+  display: none;
+  position: fixed;
+  bottom: 35px;
+  right: 55px;
+  z-index: 999;
+  background-color: rgba(233, 30, 99, 0.5) !important;
+}
+* .nav-backtop:hover {
+  background-color: #e91e63 !important;
+}
+* dialog *:focus {
+  outline: none;
+}
+* dialog select,
+* dialog input,
+* dialog textarea {
+  transition: all .3s;
+}
+* dialog select:focus,
+* dialog input:focus,
+* dialog textarea:focus,
+* dialog select:hover,
+* dialog input:hover,
+* dialog textarea:hover {
+  border-bottom-color: #e91e63;
+}
