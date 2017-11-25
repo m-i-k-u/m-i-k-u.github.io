@@ -67,7 +67,7 @@
 /*
  * SEARCH RESULT
  */
-@import "/css/font-source-han-sans.css";
+@import "https://m-i-k-u.github.io/css/font-source-han-sans.css";
 /*
  * Common
  */
@@ -110,7 +110,7 @@ input:focus {
 header .main-header {
   width: 100%;
   height: 120px;
-  background: url('/img/bannerDefBg.png');
+  background: url('https://m-i-k-u.github.io/img/bannerDefBg.png');
 }
 header .main-header .inner {
   width: 1245px;

@@ -46,7 +46,10 @@ $(function(){
                 for(var i=0; i<dianboData.length; i++) {
                     var renderFmt = $('<div class="wave"> \
                         <div class="info"> \
-                            <div class="head"><img src="'+dianboData[i].UserAvatarLink+'"/></div> \
+                            <div class="head"> \
+                                <img src="'+dianboData[i].UserAvatarLink+'"/> \
+                                <img class="verified '+dianboData[i].Verified+'" src="/img/verified.png" title="' + dianboData[i].VerifyInfo + '"/> \
+                            </div> \
                             <div class="user"> \
                                 <div class="username"><a href="'+dianboData[i].UserProfileLink+'" target="_blank">'+dianboData[i].UserName+'</a></div> \
                                 <div class="sendtime"><a href="'+dianboData[i].FeedUrl+'" target="_blank">'+moment.unix(dianboData[i].SendTime).format("YYYY/MM/DD H:mm")+'</a></div> \

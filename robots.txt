@@ -1,3 +1,17 @@
+###
+# Wayback Machine
+###
+User-agent: ia_archiver
+Allow: /
+
+User-agent: archive.org_bot
+Allow: /
+
+
+
+###
+# Universal Search Engines
+###
 User-agent: *
 
 # Homepage and Drafts
@@ -5,7 +19,7 @@ Allow: /$
 Allow: /ad*
 Allow: /u/*
 Allow: /type/*
-Allow: /SearchDraft/*
+Allow: /search*
 
 # Robots and Sitemap Files
 Allow: /robots.txt

@@ -1,0 +1,396 @@
+@charset "UTF-8";
+/* Global color default list
+ * - Description: Default color
+ * - Baseline Color: #e4acc9
+ */
+/*
+ * COMMON
+ */
+/*
+ * REGISTER PAGE
+ */
+/*
+ * REGISTER PAGE
+ */
+/*
+ * LOGIN PAGE
+ */
+/*
+ * SETTING PAGE
+ */
+/*
+ * DRAWINGS UPLOAD
+ */
+/*
+ * DRWAINGS MANAGER
+ */
+/*
+ * DRAWINGS VIEW
+ */
+/*
+ * DRAWINGS CERNSORING
+ */
+/*
+ * SEARCH RESULT
+ */
+/* Global size parameter
+ * - Baseline Device: Notebook
+ * - Baseline Resolution: 1366*768
+ */
+/*
+ * COMMON
+ */
+/*
+ * REGISTER PAGE
+ */
+/*
+ * LOGIN PAGE
+ */
+/*
+ * FORGET PASSWORD
+ */
+/*
+ * SETTING PAGE
+ */
+/*
+ * DRAWINGS UPLOAD
+ */
+/*
+ * DRAWINGS MANAGER
+ */
+/*
+ * DRAWINGS VIEW
+ */
+/*
+ * DRAWINGS CENSORING
+ */
+/*
+ * SEARCH RESULT
+ */
+#container {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#container .wrap-space {
+  width: 1250px;
+  margin: 0 auto;
+}
+#container .wrap-space .sect-userinfo {
+  width: 1250px;
+  height: 205px;
+  position: relative;
+  margin-top: 160px;
+}
+#container .wrap-space .sect-userinfo .avatar {
+  float: left;
+  position: relative;
+  z-index: 1;
+  margin-left: 20px;
+}
+#container .wrap-space .sect-userinfo .avatar img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  border: 12px solid #fff;
+}
+#container .wrap-space .sect-userinfo .username,
+#container .wrap-space .sect-userinfo .sign {
+  position: absolute;
+  top: 80px;
+  left: 255px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 0 10px #555;
+}
+#container .wrap-space .sect-userinfo .sign {
+  top: 115px;
+  font-size: 14px;
+}
+#container .wrap-space .sect-userinfo .sex.male {
+  color: #00aafc;
+}
+#container .wrap-space .sect-userinfo .sex.female {
+  color: #ff65b5;
+}
+#container .wrap-space .sect-userinfo .sex.josouko {
+  color: #FF1C64;
+}
+#container .wrap-space .sect-userinfo .info-bar {
+  background: #fff;
+  position: absolute;
+  top: 140px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 0;
+  padding-left: 240px;
+  padding-right: 10px;
+  border: 1px solid #f5f5f5f5;
+}
+#container .wrap-space .sect-userinfo .info-bar .info-item {
+  float: left;
+  width: 80px;
+  text-align: center;
+  font-size: 25px;
+  color: #888;
+  line-height: 95%;
+  padding-top: 6px;
+  margin-right: 10px;
+}
+#container .wrap-space .sect-userinfo .info-bar .info-item .info-title {
+  font-size: 15px;
+}
+#container .wrap-space .sect-userinfo .info-bar .info-right {
+  float: right;
+  width: 100px;
+  height: 100%;
+  text-align: center;
+}
+#container .wrap-space .sect-userinfo .info-bar .info-right button {
+  background-color: #fff;
+  border: 1px solid #ff65b5;
+  border-radius: 5px;
+  width: 90px;
+  height: 45px;
+  font-size: 18px;
+  display: block;
+  float: left;
+  cursor: pointer;
+  color: #ff65b5;
+  margin-top: 10px;
+}
+#container .wrap-space .content-area {
+  overflow: auto;
+  width: 100%;
+  margin-top: 40px;
+  position: relative;
+}
+#container .wrap-space .content-area .content-left {
+  float: left;
+  width: 280px;
+}
+#container .wrap-space .content-area .content-left .sect-profile,
+#container .wrap-space .content-area .content-left .sect-following,
+#container .wrap-space .content-area .content-left .sect-follower {
+  background: #fff;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border: 1px solid #f5f5f5f5;
+}
+#container .wrap-space .content-area .content-left .sect-profile .sect-title,
+#container .wrap-space .content-area .content-left .sect-following .sect-title,
+#container .wrap-space .content-area .content-left .sect-follower .sect-title {
+  height: 50px;
+  font-size: 18px;
+  color: #888;
+  line-height: 50px;
+  text-indent: 20px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 5px;
+}
+#container .wrap-space .content-area .content-left .sect-profile .follow-item,
+#container .wrap-space .content-area .content-left .sect-following .follow-item,
+#container .wrap-space .content-area .content-left .sect-follower .follow-item {
+  overflow: auto;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+#container .wrap-space .content-area .content-left .sect-profile .follow-item .avatar,
+#container .wrap-space .content-area .content-left .sect-following .follow-item .avatar,
+#container .wrap-space .content-area .content-left .sect-follower .follow-item .avatar {
+  float: left;
+}
+#container .wrap-space .content-area .content-left .sect-profile .follow-item .avatar img,
+#container .wrap-space .content-area .content-left .sect-following .follow-item .avatar img,
+#container .wrap-space .content-area .content-left .sect-follower .follow-item .avatar img {
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+  border: 1px solid #eee;
+}
+#container .wrap-space .content-area .content-left .sect-profile .follow-item .profile,
+#container .wrap-space .content-area .content-left .sect-following .follow-item .profile,
+#container .wrap-space .content-area .content-left .sect-follower .follow-item .profile {
+  float: left;
+  color: #555;
+  margin-left: 12px;
+  width: 170px;
+  margin-top: 10px;
+  word-break: break-all;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+#container .wrap-space .content-area .content-left .sect-profile .follow-item .profile .username,
+#container .wrap-space .content-area .content-left .sect-following .follow-item .profile .username,
+#container .wrap-space .content-area .content-left .sect-follower .follow-item .profile .username {
+  font-size: 17px;
+}
+#container .wrap-space .content-area .content-left .sect-profile .follow-item .profile .sign,
+#container .wrap-space .content-area .content-left .sect-following .follow-item .profile .sign,
+#container .wrap-space .content-area .content-left .sect-follower .follow-item .profile .sign {
+  color: #aaa;
+}
+#container .wrap-space .content-area .content-left .sect-profile .follow-item:hover,
+#container .wrap-space .content-area .content-left .sect-following .follow-item:hover,
+#container .wrap-space .content-area .content-left .sect-follower .follow-item:hover {
+  background: #f5f5f5;
+}
+#container .wrap-space .content-area .content-left .sect-profile .follow-empty,
+#container .wrap-space .content-area .content-left .sect-following .follow-empty,
+#container .wrap-space .content-area .content-left .sect-follower .follow-empty {
+  height: 160px;
+  line-height: 160px;
+  text-align: center;
+  color: #d0d0d0;
+  font-size: 16px;
+}
+#container .wrap-space .content-area .content-left .sect-profile .profile-verify {
+  overflow: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+#container .wrap-space .content-area .content-left .sect-profile .profile-verify img {
+  float: left;
+  width: 28px;
+  margin-top: 4px;
+  margin-left: 15px;
+}
+#container .wrap-space .content-area .content-left .sect-profile .profile-verify .verify-info {
+  background: #00aafc;
+  color: #fff;
+  font-size: 14px;
+  float: left;
+  height: 25px;
+  line-height: 25px;
+  border-radius: 20px;
+  padding: 0 12px;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+#container .wrap-space .content-area .content-left .sect-profile .profile-item {
+  display: table;
+  font-size: 16px;
+  height: 24px;
+  line-height: 24px;
+  padding: 5px 0;
+}
+#container .wrap-space .content-area .content-left .sect-profile .profile-item .profile-name {
+  float: left;
+  margin-left: 20px;
+  width: 60px;
+  color: #888;
+}
+#container .wrap-space .content-area .content-left .sect-profile .profile-item .profile-value {
+  color: #555;
+  word-break: break-all;
+  float: left;
+  width: 185px;
+}
+#container .wrap-space .content-area .content-right {
+  float: left;
+  margin-left: 15px;
+  width: 955px;
+}
+#container .wrap-space .content-area .content-right .sect-drafts {
+  overflow: auto;
+  width: 953px;
+  min-height: 720px;
+  background: #fff;
+  margin-bottom: 10px;
+  border: 1px solid #f5f5f5f5;
+}
+#container .wrap-space .content-area .content-right .sect-drafts .sect-title {
+  height: 50px;
+  font-size: 18px;
+  color: #888;
+  line-height: 50px;
+  text-indent: 20px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 15px;
+}
+#container .wrap-space .content-area .content-right .sect-drafts .draft {
+  float: left;
+  width: 25%;
+  height: 207px;
+}
+#container .wrap-space .content-area .content-right .sect-drafts .draft a {
+  text-decoration: none;
+  outline: none;
+}
+#container .wrap-space .content-area .content-right .sect-drafts .draft .image {
+  width: 100%;
+  text-align: center;
+  margin-top: 5px;
+}
+#container .wrap-space .content-area .content-right .sect-drafts .draft .image img {
+  max-width: 85%;
+  max-height: 150px;
+  border: 1px solid #e8e8e8;
+}
+#container .wrap-space .content-area .content-right .sect-drafts .draft .info {
+  width: 90%;
+  height: 40px;
+  text-align: center;
+  margin: 0 auto;
+}
+#container .wrap-space .content-area .content-right .sect-drafts .draft .info div {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#container .wrap-space .content-area .content-right .sect-drafts .draft .info div a {
+  color: #222222;
+}
+#container .wrap-space .content-area .content-right .sect-drafts .draft .info .author {
+  font-size: 1.0em;
+  margin-top: 1px;
+}
+#container .wrap-space .content-area .content-right .sect-drafts .draft .info .author a {
+  color: #666666;
+}
+#container .wrap-space .content-area .content-right .sect-drafts .sect-list-none {
+  text-align: center;
+  margin-top: 180px;
+  font-size: 24px;
+  color: #d0d0d0;
+}
+#container .wrap-space .content-area .content-right .sect-drafts .pagination {
+  display: table;
+  width: 100%;
+  padding: 0;
+  text-align: center;
+  background-color: #fafafa;
+}
+#container .wrap-space .content-area .content-right .sect-drafts .pagination li {
+  display: inline-block;
+  /* Does not support IE8 or less */
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  margin: 10px;
+  font-size: 1.3em;
+  border-bottom: 3px solid #ffffff;
+  color: #888888;
+  transition: background .3s, color .3s;
+}
+#container .wrap-space .content-area .content-right .sect-drafts .pagination li a {
+  display: block;
+  color: #888888;
+  transition: color .3s;
+}
+#container .wrap-space .content-area .content-right .sect-drafts .pagination li.active {
+  color: #000000;
+  border-bottom: 3px solid #e29abf;
+}
+#container .wrap-space .content-area .content-right .sect-drafts .pagination li.disabled {
+  display: none;
+}
+#container .wrap-space .content-area .content-right .sect-drafts .pagination li:hover {
+  background-color: #e29abf;
+  color: #ffffff;
+}
+#container .wrap-space .content-area .content-right .sect-drafts .pagination li:hover a {
+  color: #ffffff;
+}

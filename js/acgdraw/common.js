@@ -112,8 +112,8 @@ $(function() {
             {
                 if (data.login === 1) {
                     $('#loginBox-logged .avatar').attr('src', data.userinf.head);
-                    $('#loginBox-logged .username').html('<a href="/search?t=author&kw=moeartauthorsearchbyuidmoeart_'+data.userinf.id+'">'+data.userinf.name+'</a>');
-                    $('#loginBox-logged #mySpaceUrl').attr('href','/search?t=author&kw=moeartauthorsearchbyuidmoeart_'+data.userinf.id);
+                    $('#loginBox-logged .username').html('<a href="/u/'+data.userinf.id+'">'+data.userinf.name+'</a>');
+                    $('#loginBox-logged #mySpaceUrl').attr('href','/u/'+data.userinf.id);
                     $('#loginBox-logged .info').text('积分 ' + data.userinf.score);
                     $('#loginBox-logout').hide();
                     $('#loginBox-quick').hide();
@@ -204,7 +204,7 @@ $(function() {
     $.feedback({
         ajaxURL: 			'/AdFeedback',
         csrfToken:			$('meta[name="token"]').attr("content"),
-        html2canvasURL: 	'/ms/html2canvas.min.ms',
+        html2canvasURL: 	'https://cdn.bootcss.com/html2canvas/0.4.1/html2canvas.min.js',
         postHTML:			false,
 
         initButtonText: 	'<i class="fa fa-paper-plane" aria-hidden="true"></i><span class="tooltiptext">提意见反馈问题</span>',

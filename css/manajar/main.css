@@ -71,7 +71,7 @@
   font-family: "PingFangSC-Ultralight", "STHeitiSC-Light", "XHei Intel", "华文细黑", Helvetica, "Ubuntu", "微软雅黑", "Microsoft Yahei", "宋体", sans-serif;
 }
 * .background {
-  background-image: url(/img/manager_bg.jpg);
+  background-image: url(https://m-i-k-u.github.io/img/manager_bg.jpg);
   background-repeat: no-repeat;
   position: fixed;
   bottom: 0;

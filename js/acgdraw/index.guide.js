@@ -48,7 +48,12 @@ $(function(){
         renderFmt.click(function(){
             window.guidestep++;
             if (window.guidestep <= 9)
-                $("img", this).attr("src","/img/guide/"+window.guidestep+".png"); // switch guide pictures
+            {
+                if (window.guidestep == 9)
+                    $("img", this).attr("src", "https://m-i-k-u.github.io/img/guide/9.png"); // switch guide pictures
+                else
+                    $("img", this).attr("src", "/img/guide/" + window.guidestep + ".png"); // switch guide pictures
+            }
             $(".btn-guide-skip", renderFmt).hide(); // hide skip button
             switch(window.guidestep) {
                 case 1: $("body,html").animate({ scrollTop: 0 }, "fast"); break;

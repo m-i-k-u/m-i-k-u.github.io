@@ -303,11 +303,23 @@
   width: 50px;
   height: 50px;
   margin-right: 10px;
+  position: relative;
 }
 .waves .wave .info .head img {
   border-radius: 100%;
   width: 50px;
   height: 50px;
+}
+.waves .wave .info .head .verified {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 34px;
+  left: 35px;
+  background: #fff;
+}
+.waves .wave .info .head .verified.false {
+  display: none;
 }
 .waves .wave .info .user {
   float: left;
@@ -427,4 +439,3 @@
 .activitys .activity:nth-last-child(1) {
   border: none;
 }
-/*# sourceMappingURL=../../../public/css/index.css.map */

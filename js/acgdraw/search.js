@@ -61,8 +61,6 @@ $(function() {
     // Init Engine Mode: Search Engine or SubArea
     function initEngineMode() {
         var cond1 = window.location.pathname.indexOf('/type/'); // subarea
-        var cond2 = window.location.href.indexOf('moeartauthorsearchbyuidmoeart_'); // author
-
         if( cond1 === 0 )
         {
             // SubArea Mode
@@ -78,15 +76,6 @@ $(function() {
             if (window.typeId.indexOf('?') > -1) {
                 window.typeId = window.typeId.substr(0,window.typeId.indexOf('?'));
             }
-        }
-        else if ( cond2 > -1 )
-        {
-            // author mode
-            $('.sect-searchbox *').hide();
-            $('.sect-searchbox').css('height','50px');
-            $('#draftSearchMethod').hide();
-            $('#draftSubArea').hide();
-            document.title = '画廊 - 个人空间 - 萌绘图站';
         }
         else
         {
