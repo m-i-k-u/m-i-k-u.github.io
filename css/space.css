@@ -107,14 +107,25 @@
   top: 115px;
   font-size: 14px;
 }
+#container .wrap-space .sect-userinfo .sex {
+  width: 28px;
+  height: 28px;
+  background-size: cover;
+  vertical-align: text-top;
+  float: right;
+  margin-left: 10px;
+}
 #container .wrap-space .sect-userinfo .sex.male {
-  color: #00aafc;
+  background-image: url(/img/sex-tsota.png);
 }
 #container .wrap-space .sect-userinfo .sex.female {
-  color: #ff65b5;
+  background-image: url(/img/sex-loli.png);
 }
 #container .wrap-space .sect-userinfo .sex.josouko {
-  color: #FF1C64;
+  background-image: url(/img/sex-josik.png);
+}
+#container .wrap-space .sect-userinfo .sex.unknown {
+  display: none;
 }
 #container .wrap-space .sect-userinfo .info-bar {
   background: #fff;
