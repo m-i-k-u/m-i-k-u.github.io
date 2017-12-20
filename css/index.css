@@ -390,6 +390,9 @@
   max-height: 150px;
   border: 1px solid #e8e8e8;
 }
+.newdraft .draft-panel .draft .image .multi {
+  box-shadow: 3px 3px 0 #f0f0f0;
+}
 .newdraft .draft-panel .draft .info {
   width: 90%;
   height: 40px;

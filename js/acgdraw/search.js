@@ -60,8 +60,7 @@ $(function() {
 
     // Init Engine Mode: Search Engine or SubArea
     function initEngineMode() {
-        var cond1 = window.location.pathname.indexOf('/type/'); // subarea
-        if( cond1 === 0 )
+        if (window.location.pathname.indexOf('/type/') === 0) // subarea
         {
             // SubArea Mode
             window.subAreaMode = true;
@@ -76,6 +75,22 @@ $(function() {
             if (window.typeId.indexOf('?') > -1) {
                 window.typeId = window.typeId.substr(0,window.typeId.indexOf('?'));
             }
+        }
+        else if (window.location.pathname.indexOf('/my/history') === 0) // history
+        {
+            $('.sect-searchbox *').hide();
+            $('.sect-searchbox').css('height','50px');
+            $('.sect-option *').hide();
+            $('.sect-option .elm-extitle').text('浏览历史').show();
+            $('.sect-list .sect-list-none').text('您还没有浏览过任何作品');
+        }
+        else if (window.location.pathname.indexOf('/my/favorite') === 0) // favorite
+        {
+            $('.sect-searchbox *').hide();
+            $('.sect-searchbox').css('height','50px');
+            $('.sect-option *').hide();
+            $('.sect-option .elm-extitle').text('我的收藏').show();
+            $('.sect-list .sect-list-none').text('您还没有收藏过任何作品');
         }
         else
         {

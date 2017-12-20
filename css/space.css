@@ -171,6 +171,10 @@
   color: #ff65b5;
   margin-top: 10px;
 }
+#container .wrap-space .sect-userinfo .info-bar .info-right .btn-message {
+  border: 1px solid #00aafc;
+  color: #00aafc;
+}
 #container .wrap-space .content-area {
   overflow: auto;
   width: 100%;
