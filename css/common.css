@@ -67,7 +67,7 @@
 /*
  * SEARCH RESULT
  */
-@import "https://m-i-k-u.github.io/css/font-source-han-sans.css";
+@import "https://static.acgdraw.com/css/font-source-han-sans.css";
 /*
  * Common
  */
@@ -110,7 +110,7 @@ input:focus {
 header .main-header {
   width: 100%;
   height: 120px;
-  background: url('https://m-i-k-u.github.io/img/bannerDefBg.png');
+  background: url('https://static.acgdraw.com/img/bannerDefBg.png');
 }
 header .main-header .inner {
   width: 1245px;
@@ -296,12 +296,57 @@ header .top-nav .inner .main-menu .item-menu {
   font-size: 16px;
   padding: 0 20px;
   color: #555555;
+  position: relative;
 }
 header .top-nav .inner .main-menu .item-menu i {
   color: #e4acc9;
 }
+header .top-nav .inner .main-menu .item-menu .sub-menu {
+  background: #fff;
+  padding: 0;
+  margin: 0;
+  max-height: 0;
+  top: 56px;
+  left: 0;
+  z-index: 999;
+  overflow: hidden;
+  position: absolute;
+  border: 2px solid #e4acc9;
+  opacity: 0;
+  transition: max-height, 0.3s;
+}
+header .top-nav .inner .main-menu .item-menu .sub-menu li {
+  display: block;
+  height: 30px;
+  width: 76px;
+  font-size: 14px;
+  line-height: 30px;
+  padding: 2px 20px;
+}
+header .top-nav .inner .main-menu .item-menu .sub-menu li a {
+  color: #888;
+}
+header .top-nav .inner .main-menu .item-menu .sub-menu li:before {
+  content: "\3e";
+  margin-right: 5px;
+  color: #ccc;
+  font-size: smaller;
+}
+header .top-nav .inner .main-menu .item-menu .sub-menu li:hover {
+  background: #f5f5f5;
+}
+header .top-nav .inner .main-menu .item-menu .sub-menu li:nth-child(1) {
+  margin-top: 10px;
+}
+header .top-nav .inner .main-menu .item-menu .sub-menu li:nth-last-child(1) {
+  margin-bottom: 10px;
+}
 header .top-nav .inner .main-menu .item-menu:hover {
   background-color: #fff7fb;
+}
+header .top-nav .inner .main-menu .item-menu:hover .sub-menu {
+  max-height: 300px;
+  opacity: 1;
 }
 header .top-nav .inner .main-menu .home {
   font-size: 20px;
