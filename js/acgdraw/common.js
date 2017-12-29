@@ -20,7 +20,7 @@ $(function() {
     if (currentUri.indexOf('?') > -1) {
         currentUri = currentUri.substr(0,currentUri.indexOf('?'));
     }
-    $('a[href="' + currentUri + '"] li','#header .main-menu').addClass('current');
+    $('.main-menu > li > a[href="' + currentUri + '"]','#header').parent().addClass('current');
 
     /*
      * SEARCH POST

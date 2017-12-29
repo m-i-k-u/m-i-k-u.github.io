@@ -49,10 +49,7 @@ $(function(){
             window.guidestep++;
             if (window.guidestep <= 9)
             {
-                if (window.guidestep == 9)
-                    $("img", this).attr("src", "https://m-i-k-u.github.io/img/guide/9.png"); // switch guide pictures
-                else
-                    $("img", this).attr("src", "/img/guide/" + window.guidestep + ".png"); // switch guide pictures
+                $("img", this).attr("src", "https://static.acgdraw.com/img/guide/" + window.guidestep + ".png"); // switch guide pictures
             }
             $(".btn-guide-skip", renderFmt).hide(); // hide skip button
             switch(window.guidestep) {

@@ -273,6 +273,7 @@ $(function(){
                     // show chat box
                     renderFmt.click(function (e)
                     {
+                        $(".count",this).remove();
                         layer.open({
                             type: 2,
                             title: '发送私信给 '+v.username+'（非实时消息）',
