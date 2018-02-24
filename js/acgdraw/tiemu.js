@@ -272,10 +272,15 @@
                 // If in fullscreen mode and size over screen width to adjust it.
                 if(tiemu_fullscreen && img.width > window.screen.availWidth * 0.9) {
                     xWidth = window.screen.availWidth * 0.9;
-                    xHeight = (xWidth / img.width) * img.height;
+                    xHeight = cc
                 } else {
-                    xWidth = img.width;
-                    xHeight = img.height;
+                    if (img.width > 780) {
+                        xWidth = 780;
+                        xHeight = (xWidth / img.width) * img.height;
+                    } else {
+                        xWidth = img.width;
+                        xHeight = img.height;
+                    }
                 }
 
                 // FIXED: White Screen in Lower speed Network
