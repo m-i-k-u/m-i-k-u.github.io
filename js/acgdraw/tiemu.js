@@ -1,7 +1,7 @@
 /*
  * Tiemu System Plugin
  *
- * @Version: 1.0.2017.0625
+ * @Version: 1.0.2018.0224
  * @Author: MoeArt Dev. Team
  *
  * Required:
@@ -23,7 +23,7 @@
      * The default values for tiemu
      * -----------------------------*/
     var settings = ({
-        'version'          : '1.0.2017.0625',             // Plugin Version
+        'version'          : '1.0.2018.0224',             // Plugin Version
         'draft_wrapper'    : '.wrap-draft',               // Where to wrap the elements of draft attachments
         'comment_list'     : '.wrap-comment-list',        // Where to wrap the elements of tiemu comments list
         'comment_wrapper'  : '.wrap-comment',             // Which wrapper can be scroll of tiemu comments (used load avatar on demand)
@@ -272,7 +272,7 @@
                 // If in fullscreen mode and size over screen width to adjust it.
                 if(tiemu_fullscreen && img.width > window.screen.availWidth * 0.9) {
                     xWidth = window.screen.availWidth * 0.9;
-                    xHeight = cc
+                    xHeight = (xWidth / img.width) * img.height;
                 } else {
                     if (img.width > 780) {
                         xWidth = 780;
@@ -319,8 +319,13 @@
                         var xWidth = window.screen.availWidth * 0.9;
                         var xHeight = (xWidth / w) * h;
                     } else {
-                        var xWidth = w;
-                        var xHeight = h;
+                        if (img.width > 780) {
+                            var xWidth = 780;
+                            var xHeight = (xWidth / w) * h;
+                        } else {
+                            var xWidth = w;
+                            var xHeight = h;
+                        }
                     }
 
                     wrap.css('width', xWidth);  // Setting up wrapper size
