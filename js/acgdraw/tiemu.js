@@ -209,7 +209,7 @@
 
             // If not fullscreen to Insert fullscreen sign
             if(!tiemu_fullscreen) {
-                $('.tiemu-attachment-panel', renderFormat).prepend('<i class="fa fa-arrows-alt" aria-hidden="true"  title="' + i18n.ln_full_screen + '" onclick="window.location.href = window.location.href + \'/full#\' + ' + key + '"></i><br/>');
+                $('.tiemu-attachment-panel', renderFormat).prepend('<i class="fa fa-arrows-alt" aria-hidden="true"  title="' + i18n.ln_full_screen + '" onclick="window.location.href = window.location.href + \'/full#' + key + '\'"></i><br/>');
             }
 
             // Download attachment event
