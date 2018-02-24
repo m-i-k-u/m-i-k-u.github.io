@@ -274,8 +274,8 @@
                     xWidth = window.screen.availWidth * 0.9;
                     xHeight = (xWidth / img.width) * img.height;
                 } else {
-                    if (img.width > 780) {
-                        xWidth = 780;
+                    if (img.width > 750) {
+                        xWidth = 750;
                         xHeight = (xWidth / img.width) * img.height;
                     } else {
                         xWidth = img.width;
@@ -319,8 +319,8 @@
                         var xWidth = window.screen.availWidth * 0.9;
                         var xHeight = (xWidth / w) * h;
                     } else {
-                        if (img.width > 780) {
-                            var xWidth = 780;
+                        if (img.width > 750) {
+                            var xWidth = 750;
                             var xHeight = (xWidth / w) * h;
                         } else {
                             var xWidth = w;
