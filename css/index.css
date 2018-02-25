@@ -143,6 +143,8 @@
 .ranking .rank-list .rank-item .image img {
   width: 105px;
   height: 105px;
+  background-size: cover;
+  background-position: top center;
 }
 .ranking .rank-list .rank-item .draft-info {
   float: left;

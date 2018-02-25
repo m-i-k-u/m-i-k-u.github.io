@@ -72,7 +72,7 @@ $(function(){
     function rankRender() {
         $.ajax({
             type: "GET",
-            url: '/index/getRank',
+            url: '/index/getRank?total=10&day=7',
             success: function(data)
             {
                 if(data.code == 901) {
@@ -87,7 +87,7 @@ $(function(){
                 // Start render
                 for(var i=0; i<5; i++) {//首页排行目前限制数量为 5
                     var renderFmt = $('<div class="rank-item"> \
-                        <div class="image"><a href="/ad'+draftData[i].DraftID+'" target="_blank"><img src="'+draftAttach[draftData[i].DraftID]+'"/></a></div> \
+                        <div class="image"><a href="/ad'+draftData[i].DraftID+'" target="_blank"><img src="img/null.gif" style="background-image:url('+draftAttach[draftData[i].DraftID]+')"/></a></div> \
                         <div class="draft-info"> \
                             <span class="title" title="'+draftData[i].name+'"><a href="/ad'+draftData[i].DraftID+'" target="_blank">'+draftData[i].name+'</a></span> \
                             <span class="author"><a href="/ad'+draftData[i].DraftID+'" target="_blank">'+draftData[i].Uname+'</a></span> \

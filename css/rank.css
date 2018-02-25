@@ -28,6 +28,8 @@
   height: 200px;
   vertical-align: middle;
   cursor: pointer;
+  background-size: cover;
+  background-position: top center;
 }
 .ranking .draft-item .content {
   position: absolute;

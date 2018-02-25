@@ -283,6 +283,11 @@
   padding: 0 12px;
   margin-left: 5px;
   margin-top: 5px;
+  max-width: 190px;
+  word-break: break-all;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 #container .wrap-space .content-area .content-left .sect-profile .profile-item {
   display: table;

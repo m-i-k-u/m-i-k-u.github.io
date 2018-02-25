@@ -172,7 +172,7 @@
   width: calc(261px);
   height: calc(340px);
   background-size: cover !important;
-  background-position: center center !important;
+  background-position: top center !important;
   border: 1px solid #e4acc9;
 }
 #container .wrap-search .sect-list .wrap-draft .wrap-title {
@@ -239,6 +239,7 @@
 #container .wrap-search .sect-list .wrap-draft:hover {
   transform: scale(1.1);
   box-shadow: 0 0 50px gray;
+  z-index: 10;
 }
 #container .wrap-search .sect-list .wrap-draft:hover .wrap-mask {
   opacity: 1;
