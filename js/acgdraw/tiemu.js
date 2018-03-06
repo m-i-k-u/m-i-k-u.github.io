@@ -360,7 +360,7 @@
                 <div class='tiemu-item-content'>" + content + "</div> \
             </div> \
         ";
-        $('.tiemu-attachment[data-key="' + atchKey + '"] canvas').before(renderFormat);
+        $('.tiemu-attachment[data-key^="' + atchKey + '"] canvas').before(renderFormat);
 
         // If fullscreen mode to expend scale level
         if(tiemu_fullscreen) {
@@ -409,7 +409,7 @@
         $('.tiemu-new').css('opacity', "0").delay(100).promise().done(function(){ // Hide add remove olds
             $(this).remove();
         });
-        $('.tiemu-attachment[data-key="' + atchKey + '"] canvas').before(renderFormat); // append to wrapper
+        $('.tiemu-attachment[data-key^="' + atchKey + '"] canvas').before(renderFormat); // append to wrapper
 
         // Show tiemu with animation
         setTimeout(function() {
@@ -544,7 +544,7 @@
         // Click event for map the current tieme to wrapper
         $("p", renderFormat).click(function(e) {
             $('html, body').animate({
-                scrollTop: $('.tiemu-attachment[data-key="' + atchKey + '"]').offset().top - 50 // scroll to attchment
+                scrollTop: $('.tiemu-attachment[data-key^="' + atchKey + '"]').offset().top - 50 // scroll to attchment
             }, 500);
             setTimeout(function() {
                 tiemuRender(tiemu, atchKey, tiemuId, vpos, hpos);  // rendering tiemu
