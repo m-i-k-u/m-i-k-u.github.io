@@ -179,6 +179,11 @@ $(function() {
         revert ? $menu.stop().hide() : $menu.stop().fadeIn(300);
     }
     $("#linkShowQuickLogin").click(function() {
+        // disable quick login
+        // because verify code
+        window.location.href="https://auth.acgdraw.com/login";
+        return ;
+
         if (window.location.pathname === "/") { // Return login page in homepage
             window.location.href="https://auth.acgdraw.com/login";
             return ;
