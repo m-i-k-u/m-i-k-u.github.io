@@ -73,6 +73,7 @@
         'ln_dl_dling'      : '下载中',
         'ln_dl_error'      : '抱歉，作品下载失败请重试',
         'ln_dl_forbidden'  : '抱歉，由于画师设置了画作保护，下载被禁止',
+        'ln_dl_credit'     : '抱歉，咸鱼数量不够无法下载',
         'ln_like_err'      : '抱歉，赞被点飞了 ……',
         'ln_no_comment'    : '贴幕空空如也<br/>快在作品上点击来一发贴幕吧！',
     });
@@ -234,6 +235,7 @@
                         switch(data.code) {
                             case 320: atchDownloader(data.authUrl); break;
                             case 321: msgText(i18n.ln_dl_forbidden, 'err'); break;
+                            case 322: msgText(i18n.ln_dl_credit, 'err'); break;
                             case 105: msgText(i18n.ln_nologin, 'err'); break;
                             default: msgText(i18n.ln_server_err, 'err');
                         }
