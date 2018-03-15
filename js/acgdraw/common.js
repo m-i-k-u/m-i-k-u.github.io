@@ -203,9 +203,9 @@ $(function() {
             {
                 if (data.login === 1) {
                     $('#loginBox-logged .avatar').attr('src', data.userinf.head);
-                    $('#loginBox-logged .username').html('<a href="/u/'+data.userinf.id+'">'+data.userinf.name+'</a>');
-                    $('#loginBox-logged #mySpaceUrl').attr('href','/u/'+data.userinf.id);
-                    $('#loginBox-logged .info').text('积分 ' + data.userinf.score);
+                    $('#loginBox-logged .username').html('<a href="http://www.acgdraw.com/u/'+data.userinf.id+'">'+data.userinf.name+'</a>');
+                    $('#loginBox-logged #mySpaceUrl').attr('href','http://www.acgdraw.com/u/'+data.userinf.id);
+                    $('#loginBox-logged .info').html('<a href="http://www.acgdraw.com/settings/credit" style="color:#000000">咸鱼 ' + data.userinf.score + ' 条</a>');
                     $('#loginBox-logout').hide();
                     $('#loginBox-quick').hide();
                     $('#loginBox-logged').show();
