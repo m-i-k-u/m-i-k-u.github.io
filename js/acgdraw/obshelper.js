@@ -107,7 +107,7 @@ ObsHelper.getPolicy = function (policyUrl, callback)
         {
             if (xmlhttp.status >= 200 && xmlhttp.status < 400)
                 callback.call(this, JSON.parse(xmlhttp.responseText));
-            else if (args.onerror)
+            else
                 callback.call(this, false);
         }
     };

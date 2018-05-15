@@ -17,12 +17,12 @@ $(function(){
 
         // HTML Div Template
         var padding = (document.body.clientWidth - 1245)/2;
-        var renderFmt = $('<div id="MAGUIDE" style="min-width:1265px;width:100%;overflow:hidden;position:absolute;z-index:9999;cursor:pointer;"> \
+        var renderFmt = $('<div id="MAGUIDE" style="min-width:1265px;width:100%;overflow:hidden;position:absolute;z-index:10000;cursor:pointer;"> \
             <div style="float:left;width:'+padding+'px;height:1247px;background:rgba(0,0,0,0.72)"></div> \
             <div style="float:left;width:1245px;height:1247px;"> \
                 <div style="float:left;width:1245px;height:2px;background:rgba(0,0,0,0.72)"></div>\
                 <div style="float:left;width:1245px;height:1245px;position: relative;"> \
-                    <img src="/img/guide/'+window.guidestep+'.png" width="1245px" height="1245px"/> \
+                    <img src="https://static.acgdraw.com/img/guide/'+window.guidestep+'.png" width="1245px" height="1245px"/> \
                     <div class="btn-guide-skip" style="cursor:pointer; position: absolute;top: 25px;color: #FFFFFF;font-size: 1.2em;border: 1px solid #FFFFFF;padding: 8px 20px;border-radius: 5px;right: 20px;">跳过</div> \
                 </div> \
             </div> \

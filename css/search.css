@@ -227,6 +227,11 @@
 #container .wrap-search .sect-list .wrap-draft .wrap-mask p:nth-child(1) {
   margin-top: 60px;
 }
+#container .wrap-search .sect-list .wrap-draft .wrap-mask p:nth-child(2) {
+  height: 234px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 #container .wrap-search .sect-list .wrap-draft .wrap-mask p {
   color: #ffffff;
   font-size: 12px;

@@ -246,6 +246,8 @@
 #container .wrap-space .content-area .content-left .sect-following .follow-item .profile .sign,
 #container .wrap-space .content-area .content-left .sect-follower .follow-item .profile .sign {
   color: #aaa;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 #container .wrap-space .content-area .content-left .sect-profile .follow-item:hover,
 #container .wrap-space .content-area .content-left .sect-following .follow-item:hover,
