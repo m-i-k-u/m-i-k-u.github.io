@@ -330,19 +330,23 @@ $(function() {
      * FEEDBACK
      * initialing feedback plugin
      */
-    $.feedback({
-        ajaxURL: 			'/AdFeedback',
-        csrfToken:			$('meta[name="token"]').attr("content"),
-        html2canvasURL: 	'https://cdn.bootcss.com/html2canvas/0.4.1/html2canvas.min.js',
-        postHTML:			false,
-
-        initButtonText: 	'<i class="fa fa-paper-plane" aria-hidden="true"></i><span class="tooltiptext">提意见反馈问题</span>',
-        tpl: {
-            highlighter:	'<div id="feedback-highlighter"><div class="feedback-logo">提意见反馈问题</div><p>由于萌绘图站本身存在设计上的不足，可能存在部分问题。欢迎吐槽给技术君以便解决这些问题。如果有更好的建议或者想要新的功能或者奇葩的想法也欢迎在这里提出来。</p><button class="feedback-setblackout"><div class="ico"></div><span>遮盖隐私</span></button><label>请先遮盖好自己的隐私内容不给技术君看</label><button class="feedback-sethighlight feedback-active"><div class="ico"></div><span>圈选问题</span></button><label class="lower">请用鼠标圈出有问题的地方（非必要）</label><div class="feedback-buttons"><button class="feedback-next-btn feedback-btn-gray" onclick="window.location.href=\'/feedbackList\'" style="margin-left:15px">反馈列表</button><button id="feedback-highlighter-next" class="feedback-next-btn feedback-btn-blue">下一步</button><button id="feedback-highlighter-back" class="feedback-back-btn feedback-btn-gray">Back</button></div><div class="feedback-wizard-close"></div></div>',
-            overview:		'<div id="feedback-overview"><div class="feedback-logo">提意见反馈问题</div><div id="feedback-overview-description"><div id="feedback-overview-description-text"><h3>问题描述或者建议内容</h3><h3 class="feedback-additional">以下信息将会被提交</h3><div id="feedback-additional-none"><span>没有信息被提交</span></div><div id="feedback-browser-info"><span>您的浏览器版本信息</span></div><div id="feedback-page-info"><span>问题网页的信息</span></div><div id="feedback-page-structure"><span>问题网页的源代码</span></div></div></div><div id="feedback-overview-screenshot"><h3>当前问题网页截图</h3></div><div class="feedback-buttons"><button id="feedback-submit" class="feedback-submit-btn feedback-btn-blue">提交反馈</button><button id="feedback-overview-back" class="feedback-back-btn feedback-btn-gray">重新圈选</button></div><div id="feedback-overview-error">还有没有输入问题或者建议内容啦</div><div class="feedback-wizard-close"></div></div>',
-            submitSuccess:	'<div id="feedback-submit-success"><div class="feedback-logo">提意见反馈问题</div><p>感谢您的反馈与建议，反馈建议的内容已经提交给技术君，在技术君回复之后反馈内容将会显示在反馈列表中。 <a href="/feedbackList">查看反馈列表</a></p><button class="feedback-close-btn feedback-btn-blue">知道了</button><div class="feedback-wizard-close"></div></div>',
-            submitError:	'<div id="feedback-submit-error"><div class="feedback-logo">提意见反馈问题</div><p>抱歉，反馈内容提交到服务器的时候出现了一些问题，烦请重新提交一下，感谢您的理解与支持。</p><button class="feedback-close-btn feedback-btn-blue">知道了</button><div class="feedback-wizard-close"></div></div>'
-        },
+    // $.feedback({
+    //     ajaxURL: 			'/AdFeedback',
+    //     csrfToken:			$('meta[name="token"]').attr("content"),
+    //     html2canvasURL: 	'https://cdn.bootcss.com/html2canvas/0.4.1/html2canvas.min.js',
+    //     postHTML:			false,
+    //
+    //     initButtonText: 	'<i class="fa fa-paper-plane" aria-hidden="true"></i><span class="tooltiptext">提意见反馈问题</span>',
+    //     tpl: {
+    //         highlighter:	'<div id="feedback-highlighter"><div class="feedback-logo">提意见反馈问题</div><p>由于萌绘图站本身存在设计上的不足，可能存在部分问题。欢迎吐槽给技术君以便解决这些问题。如果有更好的建议或者想要新的功能或者奇葩的想法也欢迎在这里提出来。</p><button class="feedback-setblackout"><div class="ico"></div><span>遮盖隐私</span></button><label>请先遮盖好自己的隐私内容不给技术君看</label><button class="feedback-sethighlight feedback-active"><div class="ico"></div><span>圈选问题</span></button><label class="lower">请用鼠标圈出有问题的地方（非必要）</label><div class="feedback-buttons"><button class="feedback-next-btn feedback-btn-gray" onclick="window.location.href=\'/feedbackList\'" style="margin-left:15px">反馈列表</button><button id="feedback-highlighter-next" class="feedback-next-btn feedback-btn-blue">下一步</button><button id="feedback-highlighter-back" class="feedback-back-btn feedback-btn-gray">Back</button></div><div class="feedback-wizard-close"></div></div>',
+    //         overview:		'<div id="feedback-overview"><div class="feedback-logo">提意见反馈问题</div><div id="feedback-overview-description"><div id="feedback-overview-description-text"><h3>问题描述或者建议内容</h3><h3 class="feedback-additional">以下信息将会被提交</h3><div id="feedback-additional-none"><span>没有信息被提交</span></div><div id="feedback-browser-info"><span>您的浏览器版本信息</span></div><div id="feedback-page-info"><span>问题网页的信息</span></div><div id="feedback-page-structure"><span>问题网页的源代码</span></div></div></div><div id="feedback-overview-screenshot"><h3>当前问题网页截图</h3></div><div class="feedback-buttons"><button id="feedback-submit" class="feedback-submit-btn feedback-btn-blue">提交反馈</button><button id="feedback-overview-back" class="feedback-back-btn feedback-btn-gray">重新圈选</button></div><div id="feedback-overview-error">还有没有输入问题或者建议内容啦</div><div class="feedback-wizard-close"></div></div>',
+    //         submitSuccess:	'<div id="feedback-submit-success"><div class="feedback-logo">提意见反馈问题</div><p>感谢您的反馈与建议，反馈建议的内容已经提交给技术君，在技术君回复之后反馈内容将会显示在反馈列表中。 <a href="/feedbackList">查看反馈列表</a></p><button class="feedback-close-btn feedback-btn-blue">知道了</button><div class="feedback-wizard-close"></div></div>',
+    //         submitError:	'<div id="feedback-submit-error"><div class="feedback-logo">提意见反馈问题</div><p>抱歉，反馈内容提交到服务器的时候出现了一些问题，烦请重新提交一下，感谢您的理解与支持。</p><button class="feedback-close-btn feedback-btn-blue">知道了</button><div class="feedback-wizard-close"></div></div>'
+    //     },
+    // });
+    $('.quick-access').append('<button class="btn-feedback"><i class="fa fa-paper-plane" aria-hidden="true"></i><span class="tooltiptext">提意见反馈问题</span></button>');
+    $('.btn-feedback').click(function() {
+        window.open('https://weibo.com/message/history?uid=5944340393');
     });
 
     /*
